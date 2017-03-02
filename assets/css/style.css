@@ -48,6 +48,56 @@ li{
 
 /* Header */
 #header{
+	background: #fff;
+	border-top: 5px solid #f7931d;
+	padding-top: 50px;
+}
+
+#header #logo{
+	float: left;
+}
+
+#header #logo img{
+}
+
+#header #menu{
+	font-size: 16px;
+	line-height: 51px;
+}
+
+#header #menu ul{
+	list-style-type: none;
+}
+
+#header #menu li{
+	float: left;
+	margin: 0 14px;
+}
+
+#language{
+	line-height: 21px;
+	font-size: 9px;
+	color: #9a9a9a;
+	font-weight: bold;
+	float: right;
+}
+
+#language a{
+	color: #9a9a9a;
+}
+
+#language .separator{
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 1px solid #9a9a9a;
+	line-height: 21px;
+	height: 21px;
+	margin: 0 5px;
+}
+
+#language a:hover,
+#language .current{
+	color: #f15a22;
 }
 
 /* Sidebar */
@@ -56,6 +106,7 @@ li{
 
 /* Container */
 #container{
+	background: #f4f4f4;
 }
 
 /* Footer */
