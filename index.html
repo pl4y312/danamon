@@ -13,6 +13,7 @@
 
 		<script type="text/JavaScript" src="assets/js/jquery-3.1.1.min.js" ></script>
 		<script type="text/JavaScript" src="assets/js/bootstrap.min.js" ></script>
+		<script type="text/JavaScript" src="assets/js/config.js" ></script>
 		<script type="text/JavaScript" src="assets/js/css_browser_selector.js" ></script>
 	</head>
 	
@@ -22,7 +23,7 @@
 				<div id="logo">
 					<a href="#"><img src="assets/img/logo.png" alt="" /></a>
 				</div>
-				<div id="menu">
+				<div class="menu">
 					<ul>
 						<li><a href="#">Pribadi</a></li>
 						<li><a href="#">Bisnis</a></li>
@@ -49,38 +50,82 @@
 
 		<div id="container">
 			<div class="wrap">
-				This is the Container
+				<div class="title text-center">SAATNYA PEGANG KENDALI</div>
+				<div class="row">
+					<div class="col-md-2">Featured</div>
+					<div class="col-md-2">Rencana Pendidikan</div>
+					<div class="col-md-2">Memulai Karir Profesional</div>
+					<div class="col-md-2">Rencana Keuangan Keluarga</div>
+					<div class="col-md-2">Memulai Bisnis</div>
+					<div class="col-md-2">Rencana Hari Tua</div>
+				</div>
+				<div id="news" class="row">
+					<div class="title col-xs-12">BERITA DANAMON</div>
+					<div class="col-md-4">
+						<div class="wrapper">
+							<div class="news-thumbnail"><img src="assets/img/thumb-news-1.jpg" alt="" /></div>
+							<div class="news-title"><strong>Belanja online lebih mudah dengan Danamon Online Banking</strong></div>
+							<a class="news-link orange">Selanjutnya</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="wrapper">
+							<div class="news-thumbnail"><img src="assets/img/thumb-news-2.jpg" alt="" /></div>
+							<div class="news-title"><strong>Penganugerahan Danamon Social Entrepreneur Awards 2016</strong></div>
+							<a class="news-link orange">Selanjutnya</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="wrapper">
+							<div class="news-thumbnail"><img src="assets/img/thumb-news-3.jpg" alt="" /></div>
+							<div class="news-title"><strong>Kartu Prabayar Danamon Flazz Manchester United</strong></div>
+							<a class="news-link orange">Selanjutnya</a>
+						</div>
+					</div>
+					<div class="text-center col-xs-12">Berita Lainnya</div>
+				</div>
 			</div>
 		</div>
 		
 		<div id="footer">
 			<div class="wrap">
-				<div class="left">
-					Menara Bank Danamon <br />
-					Jl. HR. Rasuna Said Blok C No. 10, Karet Setiabudi, Jakarta - Indonesia 12940 <br />
-					Telpon Seluler: 67777 | Email: hellodanamon@danamon.co.id | Twitter: @HelloDanamon <br />
-					<br />
-					FOLLOW US <br />
-					<a href="#"><img src="" alt="Twitter" /></a>
-					<a href="#"><img src="" alt="Facebook" /></a>
-					<a href="#"><img src="" alt="LinkedIn" /></a>
-					<a href="#"><img src="" alt="Youtube" /></a>
-					<a href="#"><img src="" alt="Socmed" /></a>
-					<a href="#"><img src="" alt="Instagram" /></a>
-					<br />
-					<br />
-					SBDK | Site Map | Syarat dan Ketentuan <br />
-					Copyright &copy; 2017. PT. Bank Danamon Indonesia, Tbk, terdaftar dan diawasi oleh Otoritas Jasa Keuangan.
-				</div>
-				<div class="right">
-					Anak Perusahaan Danamon
-					<a href="#"><img src="" alt="Adira Finance" /></a>
-					<a href="#"><img src="" alt="Adira Insurance" /></a>
-					<a href="#"><img src="" alt="Adira Kredit" /></a>
-					<br />
-					<br />
-					Hello Danamon <br />
-					1 - 5 0 0 - 0 9 0
+				<div class="row">
+					<div class="col-md-8">
+						<div id="address">
+							<div class="orange"><strong>Menara Bank Danamon</strong></div>
+							Jl. HR. Rasuna Said Blok C No. 10, Karet Setiabudi, Jakarta - Indonesia 12940 <br />
+							Telpon Seluler: 67777&nbsp;&nbsp;|&nbsp;&nbsp;Email: hellodanamon@danamon.co.id&nbsp;&nbsp;|&nbsp;&nbsp;Twitter: @HelloDanamon <br />
+						</div>
+						<div id="follow-us">
+							<strong>FOLLOW US</strong>
+							<a href="#"><img src="assets/img/icon-twitter.png" alt="Twitter" title="Twitter" /></a>
+							<a href="#"><img src="assets/img/icon-facebook.png" alt="Facebook" title="Facebook" /></a>
+							<a href="#"><img src="assets/img/icon-linkedin.png" alt="LinkedIn" title="LinkedIn" /></a>
+							<a href="#"><img src="assets/img/icon-youtube.png" alt="Youtube" title="Youtube" /></a>
+							<a href="#"><img src="assets/img/icon-snapchat.png" alt="Snapchat" title="Snapchat" /></a>
+							<a href="#"><img src="assets/img/icon-instagram.png" alt="Instagram" title="Instagram" /></a>
+						</div>
+						<div class="menu">
+							<ul>
+								<li><a href="#">SBDK</a></li>
+								<li><a href="#">Site Map</a></li>
+								<li><a href="#">Syarat dan Ketentuan</a></li>
+							</ul>
+						</div>
+						<div id="copyright">Copyright &copy; 2017 PT Bank Danamon Indonesia Tbk terdaftar dan diawasi oleh OJK</div>
+					</div>
+					<div class="col-md-4 text-right">
+						<div id="subsidiary">
+							<div>Anak perusahaan Danamon</div>
+							<a href="#"><img src="assets/img/adira-finance.png" alt="Adira Finance" title="Adira Finance" /></a>
+							<a href="#"><img src="assets/img/adira-insurance.png" alt="Adira Insurance" title="Adira Insurance" /></a>
+							<a href="#"><img src="assets/img/adira-kredit.png" alt="Adira Kredit" title="Adira Kredit" /></a>
+						</div>
+						
+						<div id="hallo-danamon">
+							<img src="assets/img/hallo-danamon.png" alt="" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -93,6 +138,10 @@
 				<li><a href="#">ATM</a></li>
 				<li><a href="#">Internet Banking</a></li>
 			</ul>
+		</div>
+
+		<div class="wrap" id="gototop-wrapper">
+			<div id="gototop"></div>
 		</div>
 	</body>
 </html>
