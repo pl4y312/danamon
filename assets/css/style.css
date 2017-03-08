@@ -52,6 +52,41 @@ li{
 	color: #f15a22;
 }
 
+.arrow-bottom{
+	padding-right: 25px;
+	background: url('../img/arrow-bottom.png') right center no-repeat;
+	display: inline-block;
+	width: auto;
+}
+
+.more-item{
+	font-size: 16px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+input{
+	height: 30px;
+	border: 0px;
+	padding: 0 10px;
+	background: #f4f4f4;
+	color: #939598;
+}
+
+select{
+	height: 30px;
+	border: 0px;
+	padding: 0 10px;
+	background: url('../img/arrow-bottom-full.png') right 10px center no-repeat;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.img-fit img{
+	width: 100%;
+}
+
 /* Header */
 #header{
 	background: #fff;
@@ -133,27 +168,105 @@ li{
 	font-size: 30px;
 	color: #414042;
 	letter-spacing: 5px;
+	margin-bottom: 30px;
 }
 
-#news{
-	padding: 30px 0;
-}
-
-#news .wrapper{
+#newsletter{
 	background: #fff;
+	padding: 20px 10px;
+	margin-bottom: 20px;
 }
 
-#news img{
+#newsletter .text-center{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+#newsletter input[type="text"]{
+	float: left;
+	width: 75%;
+}
+
+#newsletter input[type="submit"]{
+	float: right;
+	width: 25%;
+	background: #414042;
+	color: #fff;
+}
+
+.list-style-1{
+	background: #fff;
+	padding: 16px 10px;
+}
+
+.list-style-1 ul{
+	list-style-type: none;
+}
+
+.list-style-1 li{
+	border-bottom: 1px solid #a1a1a1;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.list-style-1 li:last-child{
+	border-bottom: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.list-style-1 .iz-icon{
+	width: 44px;
+	height: 42px;
+	display: inline-block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.iz-icon-phone{
+	background-image: url('../img/icon-phone.png');
+}
+
+.iz-icon-notebook{
+	background-image: url('../img/icon-notebook.png');
+}
+
+.iz-icon-whistle{
+	background-image: url('../img/icon-whistle.png');
+}
+
+#featured-item{
+	margin-bottom: 30px;
+}
+
+#news-section{
+	padding: 30px 0;
+	background: #e6e7e8;
+}
+
+#news-section select{
+	background-color: #fff;
 	width: 100%;
 }
 
-#news .news-title{
+.news-item{
+	background: #fff;
+}
+
+.news-item img{
+	width: 100%;
+}
+
+.news-item .news-title{
 	font-size: 16px;
 	margin: 15px;
 	color: #231f20;
 }
 
-#news .news-link{
+.news-item .news-link{
 	padding-right: 25px;
 	display: inline-block;
 	background: url('../img/arrow-next.png') right center no-repeat;
