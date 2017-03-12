@@ -3,6 +3,7 @@
 	<head profile="http://gmpg.org/xfn/11" >
 		<title>Bank Danamon > Home</title>
 		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=8" >
 		
@@ -17,7 +18,7 @@
 		<script type="text/JavaScript" src="assets/js/css_browser_selector.js" ></script>
 	</head>
 	
-	<body>
+	<body class="frontend">
 		<div id="header" class="clearfix">
 			<div class="wrap">
 				<div id="logo">
@@ -45,19 +46,51 @@
 		</div>
 		
 		<div id="slideshow">
-			This is slideshow	
+			<div class="item">
+				<img src="assets/img/banner-slideshow-1.jpg" alt="" />
+			</div>
+			<div class="item">
+				<img src="assets/img/banner-slideshow-2.jpg" alt="" />
+			</div>
+			<div class="item">
+				<img src="assets/img/banner-slideshow-3.jpg" alt="" />
+			</div>
+			<div class="item">
+				<img src="assets/img/banner-slideshow-4.jpg" alt="" />
+			</div>
+			<div id="slideshow-nav"></div>
 		</div>
 
 		<div id="container">
 			<div class="wrap">
 				<div class="title text-center">SAATNYA PEGANG KENDALI</div>
-				<div class="row">
-					<div class="col-md-2">Featured</div>
-					<div class="col-md-2">Rencana Pendidikan</div>
-					<div class="col-md-2">Memulai Karir Profesional</div>
-					<div class="col-md-2">Rencana Keuangan Keluarga</div>
-					<div class="col-md-2">Memulai Bisnis</div>
-					<div class="col-md-2">Rencana Hari Tua</div>
+				<div class="fix-width">
+					<div id="featured-menu" class="clearfix">
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-star.png" alt="" /></center>
+							Featured
+						</div>
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-hat.png" alt="" /></center>
+							Rencana Pendidikan
+						</div>
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-businessman.png" alt="" /></center>
+							Memulai Karir Profesional
+						</div>
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-family.png" alt="" /></center>
+							Rencana Keuangan Keluarga
+						</div>
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-briefcase.png" alt="" /></center>
+							Memulai Bisnis
+						</div>
+						<div class="text-center">
+							<center><img src="assets/img/icon-40x44-old-man.png" alt="" /></center>
+							Rencana Hari Tua
+						</div>
+					</div>
 				</div>
 
 				<div class="row">
@@ -106,6 +139,87 @@
 					<div class="col-xs-12 text-center more-item orange">
 						<span class="arrow-bottom"><strong>Lainnya</strong></span>
 					</div>
+				</div>
+			</div>
+
+			<div id="kpr" class="wrap">
+				<div class="row">
+					<div class="title col-md-9">SIMULASI KPR</div>
+					<div class="col-md-3">
+						<select name="" id="">
+							<option value="">KPR</option>
+							<option value="">KKB</option>
+						</select>
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="col-md-3">
+						<div><strong>Harga Rumah</strong></div>
+						<select name="" id="">
+							<option value="">Rp. 500.000.000</option>
+							<option value="">Rp. 600.000.000</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<div><strong>Uang Muka (min 30%)</strong></div>
+						<select name="" id="">
+							<option value="">Rp. 150.000.000</option>
+							<option value="">Rp. 200.000.000</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<div><strong>Jangka Waktu</strong></div>
+						<select name="" id="">
+							<option value="">10 Tahun</option>
+							<option value="">15 Tahun</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<div><strong>Suku Bunga Efektif per Tahun</strong></div>
+						<select name="" id="">
+							<option value="">12%</option>
+							<option value="">13%</option>
+						</select>
+					</div>
+
+					<div class="clear"></div>
+					<div class="col-md-2 col-md-offset-10">
+						<input type="submit" value="KALKULASI" />
+					</div>
+
+					<div class="clear separator"></div>
+
+					<div class="col-md-3">Pokok Hutang/Plafon Kredit</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">350.000,00</div>
+					<div class="clear"></div>
+
+					<div class="col-md-3">Cicilan per Bulan</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">5.021.483,19</div>
+					<div class="clear"></div>
+
+					<div class="col-md-3">Uang Muka</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">150.000.000,00</div>
+					<div class="clear"></div>
+
+					<div class="col-md-3">Provisi</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">3.500.000,00</div>
+					<div class="clear"></div>
+
+					<div class="col-md-3">Administrasi</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">500.000,00</div>
+					<div class="clear"></div>
+
+					<div class="col-md-3">Total</div>
+					<div class="col-md-1">Rp.</div>
+					<div class="col-md-2 text-right">154.000.000,00</div>
+					<div class="clear"></div>
+					
 				</div>
 			</div>
 
