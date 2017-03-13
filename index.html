@@ -143,83 +143,166 @@
 			</div>
 
 			<div id="kpr" class="wrap">
-				<div class="row">
-					<div class="title col-md-9">SIMULASI KPR</div>
-					<div class="col-md-3">
-						<select name="" id="">
-							<option value="">KPR</option>
-							<option value="">KKB</option>
-						</select>
+				<div id="simulation-select" class="row">
+					<div class="col-md-offset-9 col-md-3">
+						<div>
+							<select name="">
+								<option value="simulation-kpr">KPR</option>
+								<option value="simulation-kkb">KKB</option>
+							</select>
+						</div>
 					</div>
+				</div>
+				<div id="simulation-content">
+					<div class="row" id="simulation-kpr">
 
-					<div class="clear"></div>
+						<div class="title col-md-9">SIMULASI KPR</div>
 
-					<div class="col-md-3">
-						<div><strong>Harga Rumah</strong></div>
-						<select name="" id="">
-							<option value="">Rp. 500.000.000</option>
-							<option value="">Rp. 600.000.000</option>
-						</select>
+						<div class="clear"></div>
+
+						<div class="col-md-3">
+							<div><strong>Harga Rumah</strong></div>
+							<select name="" id="">
+								<option value="">Rp. 500.000.000</option>
+								<option value="">Rp. 600.000.000</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Uang Muka (min 30%)</strong></div>
+							<select name="" id="">
+								<option value="">Rp. 150.000.000</option>
+								<option value="">Rp. 200.000.000</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Jangka Waktu</strong></div>
+							<select name="" id="">
+								<option value="">10 Tahun</option>
+								<option value="">15 Tahun</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Suku Bunga Efektif per Tahun</strong></div>
+							<select name="" id="">
+								<option value="">12%</option>
+								<option value="">13%</option>
+							</select>
+						</div>
+
+						<div class="clear"></div>
+						<div class="col-md-2 col-md-offset-10">
+							<input type="submit" value="KALKULASI" />
+						</div>
+
+						<div class="clear separator"></div>
+
+						<div class="col-md-3">Pokok Hutang/Plafon Kredit</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">350.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Cicilan per Bulan</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">5.021.483,19</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Uang Muka</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">150.000.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Provisi</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">3.500.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Administrasi</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">500.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Total</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">154.000.000,00</div>
+						<div class="clear"></div>
 					</div>
-					<div class="col-md-3">
-						<div><strong>Uang Muka (min 30%)</strong></div>
-						<select name="" id="">
-							<option value="">Rp. 150.000.000</option>
-							<option value="">Rp. 200.000.000</option>
-						</select>
+					<div class="row" id="simulation-kkb">
+
+						<div class="title col-md-9">SIMULASI KKB</div>
+
+						<div class="clear"></div>
+
+						<div class="col-md-3">
+							<div><strong>Harga Kendaraan</strong></div>
+							<select name="" id="">
+								<option value="">Rp. 100.000.000</option>
+								<option value="">Rp. 200.000.000</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Uang Muka (min 30%)</strong></div>
+							<select name="" id="">
+								<option value="">Rp. 30.000.000</option>
+								<option value="">Rp. 50.000.000</option>
+								<option value="">Rp. 70.000.000</option>
+								<option value="">Rp. 100.000.000</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Jangka Waktu</strong></div>
+							<select name="" id="">
+								<option value="">1 Tahun</option>
+								<option value="">2 Tahun</option>
+								<option value="">3 Tahun</option>
+								<option value="">4 Tahun</option>
+								<option value="">5 Tahun</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<div><strong>Suku Bunga Efektif per Tahun</strong></div>
+							<select name="" id="">
+								<option value="">12%</option>
+								<option value="">13%</option>
+							</select>
+						</div>
+
+						<div class="clear"></div>
+						<div class="col-md-2 col-md-offset-10">
+							<input type="submit" value="KALKULASI" />
+						</div>
+
+						<div class="clear separator"></div>
+
+						<div class="col-md-3">Pokok Hutang/Plafon Kredit</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">350.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Cicilan per Bulan</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">5.021.483,19</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Uang Muka</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">150.000.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Provisi</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">3.500.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Administrasi</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">500.000,00</div>
+						<div class="clear"></div>
+
+						<div class="col-md-3">Total</div>
+						<div class="col-md-1">Rp.</div>
+						<div class="col-md-2 text-right">154.000.000,00</div>
+						<div class="clear"></div>
 					</div>
-					<div class="col-md-3">
-						<div><strong>Jangka Waktu</strong></div>
-						<select name="" id="">
-							<option value="">10 Tahun</option>
-							<option value="">15 Tahun</option>
-						</select>
-					</div>
-					<div class="col-md-3">
-						<div><strong>Suku Bunga Efektif per Tahun</strong></div>
-						<select name="" id="">
-							<option value="">12%</option>
-							<option value="">13%</option>
-						</select>
-					</div>
-
-					<div class="clear"></div>
-					<div class="col-md-2 col-md-offset-10">
-						<input type="submit" value="KALKULASI" />
-					</div>
-
-					<div class="clear separator"></div>
-
-					<div class="col-md-3">Pokok Hutang/Plafon Kredit</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">350.000,00</div>
-					<div class="clear"></div>
-
-					<div class="col-md-3">Cicilan per Bulan</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">5.021.483,19</div>
-					<div class="clear"></div>
-
-					<div class="col-md-3">Uang Muka</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">150.000.000,00</div>
-					<div class="clear"></div>
-
-					<div class="col-md-3">Provisi</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">3.500.000,00</div>
-					<div class="clear"></div>
-
-					<div class="col-md-3">Administrasi</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">500.000,00</div>
-					<div class="clear"></div>
-
-					<div class="col-md-3">Total</div>
-					<div class="col-md-1">Rp.</div>
-					<div class="col-md-2 text-right">154.000.000,00</div>
-					<div class="clear"></div>
-					
 				</div>
 			</div>
 

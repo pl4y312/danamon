@@ -329,6 +329,19 @@ body.frontend{
 	margin-bottom: 40px;
 	margin-top: 30px;
 	line-height: 30px;
+	position: relative;
+}
+
+#kpr #simulation-select div{
+	position: relative;
+}
+
+#kpr #simulation-select select{
+	position: absolute;
+}
+
+#kpr #simulation-content .row{
+	display: none;
 }
 
 #kpr input[type="submit"]{

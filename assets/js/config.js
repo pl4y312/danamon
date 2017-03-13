@@ -43,6 +43,17 @@ $(document).ready(function(){
 
 	/**
 	*
+	* Simulation Tab
+	*
+	**/
+	$("#simulation-content .row").first().css("display", "block");
+	$("#simulation-select select").change(function(){
+		$("#simulation-content .row").css("display", "none");
+		$("#simulation-content #" + this.value).fadeIn();
+	});
+
+	/**
+	*
 	* Scroll to top
 	*
 	**/
