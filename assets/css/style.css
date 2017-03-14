@@ -169,7 +169,6 @@ body.frontend{
 /* Container */
 #container{
 	background: #f4f4f4;
-	padding-top: 20px;
 }
 
 .title{
@@ -183,6 +182,7 @@ body.frontend{
 	width: 100%;
 	height: 480px;
 	position: relative;
+	margin-bottom: 20px;
 }
 
 #slideshow .item{
@@ -218,7 +218,7 @@ body.frontend{
 	font-size: 16px;
 }
 
-#featured-menu div{
+#featured-menu .tab-menu{
 	width: 157px;
 	border-right: 1px solid #f9f9f9;
 	float: left;
@@ -231,11 +231,11 @@ body.frontend{
 	cursor: pointer;
 }
 
-#featured-menu div:first-child{
+#featured-menu .tab-menu:first-child{
 	width: 156px;
 }
 
-#featured-menu div:last-child{
+#featured-menu .tab-menu:last-child{
 	width: 156px;
 	border-right: 0px;
 }
@@ -245,10 +245,15 @@ body.frontend{
 	text-align: center;
 }
 
-#featured-menu div:hover{
+#featured-menu .tab-menu:hover,
+#featured-menu .tab-menu.current{
 	color: #f15a22;
 	font-weight: bold;
 	border-bottom-color: #f15a22;
+}
+
+.tab-content{
+	display: none;
 }
 
 #newsletter{

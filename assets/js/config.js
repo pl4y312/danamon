@@ -43,6 +43,21 @@ $(document).ready(function(){
 
 	/**
 	*
+	* Content Tab
+	*
+	**/
+	$("#featured-menu .tab-menu").first().addClass('current');
+	$(".tab-content").first().css("display", "block");
+	$("#featured-menu .tab-menu").click(function(e){
+		$(this).addClass('current');
+		$(this).siblings().removeClass('current');
+		var tab = $(this).attr('id');
+		$(".tab-content").not(tab).hide();
+		$(tab).fadeIn();
+	});
+
+	/**
+	*
 	* Simulation Tab
 	*
 	**/
