@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<news>
+	<item>
+		<title>More News 1</title>
+		<thumbnail>assets/img/thumb-news-5.jpg</thumbnail>
+		<pagelink>http://localhost/danamon/news1</pagelink>
+	</item>
+	<item>
+		<title>More News 2</title>
+		<thumbnail>assets/img/thumb-news-6.jpg</thumbnail>
+		<pagelink>http://localhost/danamon/news2</pagelink>
+	</item>
+	<item>
+		<title>More News 3</title>
+		<thumbnail>assets/img/thumb-news-4.jpg</thumbnail>
+		<pagelink>http://localhost/danamon/news3</pagelink>
+	</item>
+</news>

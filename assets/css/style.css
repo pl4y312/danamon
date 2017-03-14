@@ -369,6 +369,10 @@ body.frontend{
 	width: 100%;
 }
 
+#news-section .separator{
+	margin-top: 30px;
+}
+
 .news-item{
 	background: #fff;
 }

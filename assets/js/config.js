@@ -54,6 +54,30 @@ $(document).ready(function(){
 
 	/**
 	*
+	* More News AJAX
+	*
+	**/
+	$("#more-news").click(function(e){
+		e.preventDefault();
+		$.ajax({
+            type: "GET",
+            url: "news.xml",
+            cache: false,
+            dataType: "xml",
+            success: function(xml) {
+            	var separator = "<div class='separator clear'></div>";
+            	var html = "";
+				$(xml).find('news item').each(function(){
+					html += "<div class='col-md-4'><div class='news-item'><div class='news-thumbnail'><img src='"+ $(this).find('thumbnail').text() +"' alt='' /></div><div class='news-title'><strong>" + $(this).find('title').text() + "</strong></div><a href='" + $(this).find('pagelink').text() + "' class='news-link orange'>Selanjutnya</a></div></div>";
+				});
+				$(separator).insertBefore("#news-section .more-item");
+				$(html).insertBefore("#news-section .more-item").hide().slideDown();
+            }
+        });
+	});
+
+	/**
+	*
 	* Scroll to top
 	*
 	**/
