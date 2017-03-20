@@ -183,10 +183,29 @@ body.frontend{
 	height: 480px;
 	position: relative;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 #slideshow .item{
 	position: absolute;
+	overflow: hidden;
+}
+
+#slideshow .description{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	z-index: 100;
+	top: 160px;
+	letter-spacing: 5px;
+}
+
+#slideshow .description span{
+	display: block;
+}
+
+#slideshow .description .big{
+	font-size: 52px;
 }
 
 #slideshow #slideshow-nav{
@@ -399,6 +418,10 @@ body.frontend{
 	cursor: pointer;
 	margin-left: 15px;
 	margin-bottom: 15px;
+}
+
+#news-section .link-page-news{
+	display: none;
 }
 
 /* Footer */

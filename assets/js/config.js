@@ -41,6 +41,10 @@ $(document).ready(function(){
 
 	});
 
+	$('#slideshow .description').css({'left': function(){
+		return $('.wrap').offset().left;
+	}})
+
 	/**
 	*
 	* Content Tab
@@ -72,23 +76,12 @@ $(document).ready(function(){
 	* More News AJAX
 	*
 	**/
+	$("#news-section .col-md-4:gt(2)").hide();
 	$("#more-news").click(function(e){
 		e.preventDefault();
-		$.ajax({
-            type: "GET",
-            url: "news.xml",
-            cache: false,
-            dataType: "xml",
-            success: function(xml) {
-            	var separator = "<div class='separator clear'></div>";
-            	var html = "";
-				$(xml).find('news item').each(function(){
-					html += "<div class='col-md-4'><div class='news-item'><div class='news-thumbnail'><img src='"+ $(this).find('thumbnail').text() +"' alt='' /></div><div class='news-title'><strong>" + $(this).find('title').text() + "</strong></div><a href='" + $(this).find('pagelink').text() + "' class='news-link orange'>Selanjutnya</a></div></div>";
-				});
-				$(separator).insertBefore("#news-section .more-item");
-				$(html).insertBefore("#news-section .more-item").hide().slideDown();
-            }
-        });
+		$("#news-section .col-md-4:gt(2)").slideDown();
+		$("#news-section #more-news").hide();
+		$("#news-section .link-page-news").show();
 	});
 
 	/**
