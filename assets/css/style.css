@@ -98,7 +98,9 @@ body.frontend{
 	background: #fff;
 	border-top: 5px solid #f7931d;
 	padding-top: 50px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1000;
 }
 
 #header .wrap > div{
@@ -169,6 +171,7 @@ body.frontend{
 /* Container */
 #container{
 	background: #f4f4f4;
+	position: relative;
 }
 
 .title{
@@ -428,6 +431,7 @@ body.frontend{
 #footer{
 	padding: 50px 0;
 	color: #6d6e71;
+	position: relative;
 }
 
 #address{
@@ -503,5 +507,75 @@ body.frontend{
 	background: url('../img/gototop.png') center center no-repeat;
 	cursor: pointer;
 	-webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+	transition: width 2s;
+}
+
+#sticky-menu{
+	background: #f4f4f4;
+	position: fixed;
+	width: 80px;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	z-index: 998;
+	padding-top: 109px;
+}
+
+#sticky-menu > ul{
+	list-style-type: none;
+}
+
+#sticky-menu > ul > li{
+	display: block;
+	border-top: 1px solid #fff;
+}
+
+#sticky-menu > ul > li > img{
+	vertical-align: middle;
+}
+
+#sticky-menu > ul > li:first-child{
+	border-top: none;
+}
+
+#sticky-menu a.menu{
+	text-align: center;
+	padding: 20px 5px 0 5px;
+	height: 95px;
+	display: block;
+	color: #58595b;
+	font-size: 8px;
+	cursor: pointer;
+}
+
+#sticky-menu a.menu:hover,
+#sticky-menu a.menu.current{
+	background: #f7931d;
+	color: #fff;
+}
+
+#sticky-menu .content{
+	width: 320px;
+	background: #f7931d;
+	color: #fff;
+	position: absolute;
+	right: -320px;
+	height: 100%;
+	top: 0;
+	padding: 150px 20px 0 20px;
+}
+
+#sticky-menu .content .title{
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+#sticky-menu .glyphicon-remove{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: -300px;
+	top: 120px;
+	z-index: 999;
+	cursor: pointer;
 }

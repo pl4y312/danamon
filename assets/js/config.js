@@ -103,6 +103,24 @@ $(document).ready(function(){
 			scrollTop : 0
 		}, 500);
 	});
+
+	/**
+	 *
+	 * Sticky Menu
+	 *
+	 */
+	$('#sticky-menu a').click(function(){
+		$('#sticky-menu').animate({right: "320px"}, 500);
+		$('#container, #footer').animate({right: "400px"}, 500);
+		$('#sticky-menu a').removeClass('current').siblings('.content').hide();
+		$(this).addClass('current').siblings('.content').show();
+	});
+
+	$('#sticky-menu .glyphicon-remove').click(function(){
+		$('#sticky-menu').animate({right: "0"}, 500);
+		$('#container, #footer').animate({right: "0"}, 500);
+		$('#sticky-menu a').removeClass('current');
+	});
 });
 
 function slideshow(){
