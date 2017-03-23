@@ -1,0 +1,88 @@
+/*
+Author: Iskandar Zulkarnain
+Alias: pl4y312
+*/
+
+/* Medium Device | col-md- */
+@media(max-width: 1199px){
+	.frontend .wrap{
+		width: 940px;
+	}
+}
+
+/* Small Device | col-sm- */
+@media(max-width: 991px){
+	.frontend .wrap{
+		width: 750px;
+	}
+
+	#sticky-menu{
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		top: auto;
+		height: 80px;
+		padding-top: 0px;
+	}
+
+	#sticky-menu ul > li{
+		width: 19%;
+		display: inline-block;
+		border-top: none;
+		border-left: 1px solid #fff;
+		text-align: center;
+	}
+
+	#sticky-menu ul > li:first-child{
+		border-left: none;
+	}
+
+	#sticky-menu a.menu{
+		/*width: 20%;*/
+		height: 80px;
+		display: inline-block;
+	}
+
+	#sticky-menu a.menu > div{
+		display: none;
+	}
+
+}
+
+/* Extra Small Device | col-xs- */
+@media(max-width: 767px){
+	.frontend .wrap{
+		width: 100%;
+	}
+
+	#sticky-menu{
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		top: auto;
+		height: 80px;
+		padding-top: 0px;
+	}
+
+	#sticky-menu ul > li{
+		width: 19%;
+		display: inline-block;
+		border-top: none;
+		border-left: 1px solid #fff;
+		text-align: center;
+	}
+
+	#sticky-menu ul > li:first-child{
+		border-left: none;
+	}
+
+	#sticky-menu a.menu{
+		/*width: 20%;*/
+		height: 80px;
+		display: inline-block;
+	}
+
+	#sticky-menu a.menu > div{
+		display: none;
+	}
+}

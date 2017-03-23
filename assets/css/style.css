@@ -29,6 +29,7 @@ body.frontend{
 	width: 940px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 
 .frontend .fix-width{
@@ -322,27 +323,8 @@ body.frontend{
 	padding-bottom: 0px;
 }
 
-.list-style-1 .iz-icon{
-	width: 44px;
-	height: 42px;
-	display: inline-block;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-right: 10px;
-	margin-left: 10px;
-	vertical-align: middle;
-}
-
-.iz-icon-phone{
-	background-image: url('../img/icon-phone.png');
-}
-
-.iz-icon-notebook{
-	background-image: url('../img/icon-notebook.png');
-}
-
-.iz-icon-whistle{
-	background-image: url('../img/icon-whistle.png');
+.list-style-1 img{
+	margin: 0 10px;
 }
 
 #featured-item{
@@ -546,6 +528,7 @@ body.frontend{
 	color: #58595b;
 	font-size: 8px;
 	cursor: pointer;
+	width: 100%;
 }
 
 #sticky-menu a.menu:hover,
