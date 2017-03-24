@@ -1,10 +1,22 @@
 $(document).ready(function(){
 
 	/**
-	*
-	* Slideshow
-	*
-	**/
+	 *
+	 * Mobile Toggle Menu
+	 *
+	 */
+	 if( $(window).width() < 1200){
+	 	$('#header .menu').click(function(){
+	 		$(this).find('.level-1').slideToggle();
+	 	})
+	 }
+	
+
+	/**
+	 *
+	 * Slideshow
+	 *
+	 */
 	
 	$('#slideshow .item').css('display', 'none');
 	$('#slideshow .item').first().fadeIn().addClass('active');
@@ -46,10 +58,10 @@ $(document).ready(function(){
 	}})
 
 	/**
-	*
-	* Content Tab
-	*
-	**/
+	 *
+	 * Content Tab
+	 *
+	 */
 	$("#featured-menu .tab-menu").first().addClass('current');
 	$(".tab-content").first().css("display", "block");
 	$("#featured-menu .tab-menu").click(function(e){
@@ -61,10 +73,10 @@ $(document).ready(function(){
 	});
 
 	/**
-	*
-	* Simulation Tab
-	*
-	**/
+	 *
+	 * Simulation Tab
+	 *
+	 */
 	$("#simulation-content .row").first().css("display", "block");
 	$("#simulation-select select").change(function(){
 		$("#simulation-content .row").css("display", "none");
@@ -72,10 +84,10 @@ $(document).ready(function(){
 	});
 
 	/**
-	*
-	* More News AJAX
-	*
-	**/
+	 *
+	 * More News AJAX
+	 *
+	 */
 	$("#news-section .col-md-4:gt(2)").hide();
 	$("#more-news").click(function(e){
 		e.preventDefault();
@@ -85,10 +97,10 @@ $(document).ready(function(){
 	});
 
 	/**
-	*
-	* Scroll to top
-	*
-	**/
+	 *
+	 * Scroll to top
+	 *
+	 */
 	$(window).scroll(function() {
 		if ($(this).scrollTop() >= 50) {
 			$('#gototop')
