@@ -5,24 +5,27 @@ Alias: pl4y312
 
 /* Medium Device | col-md- */
 @media(max-width: 1199px){
-	#header .menu{
-		background: url(../img/icon-40x44-menu-responsive.png) center center no-repeat;
+	#header #icon-menu-responsive{
+		background: url(../img/icon-40x44-menu-responsive.png) top center no-repeat;
 		position: fixed;
 		top: 50px;
 		right: 10px;
 		width: 40px;
 		height: 44px;
+		cursor: pointer;
+	}
+
+	#header #icon-menu-responsive.open{
+		background-position: bottom center;
 	}
 
 	#header .menu > ul{
 		position: fixed;
 		top: 109px;
-		left: 0px;
 		width: 100%;
 		background: #f1f2f2;
 		padding-bottom: 20px;
 		overflow-y: scroll;
-		display: none;
 	}
 
 	#header .menu > ul > li{
@@ -36,8 +39,30 @@ Alias: pl4y312
 		padding: 20px 0;
 	}
 
+	#header .menu .level-2{
+		padding-left: 20px;
+		display: none;
+	}
+
+	#header .menu .level-2 > li{
+		padding-left: 20px;
+	}
+
+	#header .menu .level-2 > li > a{
+		padding: 20px 0;
+		display: block;
+	}
+
 	#language{
 		right: 30px;
+	}
+
+	#footer{
+		padding-bottom: 150px;
+	}
+
+	#gototop{
+		bottom: 80px;
 	}
 
 	#sticky-menu{

@@ -116,6 +116,10 @@ body.frontend{
 #header #logo img{
 }
 
+#header #icon-menu-responsive{
+	display: none;
+}
+
 #header .menu{
 	font-size: 16px;
 }
@@ -135,6 +139,10 @@ body.frontend{
 
 #header .menu > ul > li > a:hover{
 	color: #f15a22;
+}
+
+#header .menu ul.level-2{
+	/*display: none;*/
 }
 
 #language{
