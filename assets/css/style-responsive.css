@@ -75,6 +75,14 @@ Alias: pl4y312
 		right: 30px;
 	}
 
+	#featured-menu-wrap{
+		overflow-x: scroll;
+	}
+
+	#featured-menu{
+		width: 940px;
+	}
+
 	#footer{
 		padding-bottom: 150px;
 	}
@@ -93,8 +101,8 @@ Alias: pl4y312
 	}
 
 	#sticky-menu ul > li{
-		width: 19%;
-		display: inline-block;
+		width: 20%;
+		float: left;
 		border-top: none;
 		border-left: 1px solid #fff;
 		text-align: center;
@@ -150,5 +158,10 @@ Alias: pl4y312
 
 	#language{
 		right: 70px;
+	}
+
+	#footer{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }

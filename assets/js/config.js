@@ -7,15 +7,17 @@ $(document).ready(function(){
 	 */
 	if( $(window).width() < 1200){
 		var menuWidth = $(this).width();
-		$('#header .menu .level-1').css({'right': -menuWidth})
+		$('#header .menu .level-1').css({'right': -menuWidth});
 		$('#icon-menu-responsive').click(function(){
-			$('#icon-menu-responsive').toggleClass('open');
-			$('body').toggleClass('disableScroll');
+			$(this).toggleClass('open');
 			if($(this).hasClass('open')){
 				$('#header .menu .level-1').animate({right: "0px"}, 500);
-				$('#sticky-menu .glyphicon-remove').trigger('click');
+				if($('#sticky-menu').hasClass('open'))
+					$('#sticky-menu .glyphicon-remove').trigger('click');
+				$('body').addClass('disableScroll');
 			} else {
 				$('#header .menu .level-1').animate({right: -menuWidth}, 500);
+				$('body').removeClass('disableScroll');
 			}
 		});
 
@@ -35,7 +37,6 @@ $(document).ready(function(){
 	 * Slideshow
 	 *
 	 */
-	
 	$('#slideshow .item').css('display', 'none');
 	$('#slideshow .item').first().fadeIn().addClass('active');
 	var slideInt = setInterval( "slideshow()", 3000);
@@ -56,7 +57,6 @@ $(document).ready(function(){
 	$('#slideshow-nav li').first().addClass('active');
 
 	$('#slideshow-nav li').on('click', function(){
-
 		clearInterval(slideInt);
 
 		$('#slideshow-nav li.active').removeClass('active');
@@ -168,6 +168,7 @@ $(document).ready(function(){
 		})
 
 		$('#sticky-menu a').click(function(){
+			$('#sticky-menu').addClass('open');
 			$('body').addClass('disableScroll');
 			$('#sticky-menu').animate({top: headerHeight + stickyMenuHeight}, 500);
 			$('#sticky-menu a').removeClass('current').siblings('.content').hide();
@@ -182,9 +183,10 @@ $(document).ready(function(){
 		});
 
 		$('#sticky-menu .glyphicon-remove').click(function(){
-			$('body').removeClass('disableScroll');
 			$('#sticky-menu').animate({top: windowHeight - stickyMenuHeight}, 500);
 			$('#header').css({'position' : 'relative'});
+			$('#sticky-menu').removeClass('open');
+			$('body').removeClass('disableScroll');
 			$('#sticky-menu a').removeClass('current');
 		});
 	}
