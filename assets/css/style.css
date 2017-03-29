@@ -175,12 +175,37 @@ body.frontend{
 
 /* Sidebar */
 #sidebar{
+	padding-top: 30px;
+}
+
+#sidebar ul{
+	list-style-type: none;
+}
+
+#sidebar li{
+	border-bottom: 1px solid #d1d3d4;
+	font-size: 14px;
+}
+
+#sidebar a{
+	line-height: 50px;
+	display: block;
+	color: #6d6e71;
+}
+
+#sidebar a:hover{
+	color: #f15a22;
+	font-weight: bold;
 }
 
 /* Container */
 #container{
 	background: #f4f4f4;
 	position: relative;
+}
+
+.inner #container{
+	background: #fff;
 }
 
 .title{
@@ -242,7 +267,6 @@ body.frontend{
 #slideshow #slideshow-nav li.active{
 	background-position: center bottom;
 }
-
 
 #featured-menu{
 	margin-bottom: 20px;
@@ -415,6 +439,103 @@ body.frontend{
 
 #news-section .link-page-news{
 	display: none;
+}
+
+#banner-page{
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+
+#banner-page .description{
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	color: #fff;
+}
+
+#banner-page .description span{
+	display: block;
+	letter-spacing: 5px;
+}
+
+#banner-page .description .big{
+	font-size: 36px;
+	line-height: 36px;
+	margin-bottom: 10px;
+}
+
+#banner-page .description .btn{
+	border: 1px solid #fff;
+	padding: 10px 40px;
+	border-radius: 0px 0px 0px 0px;
+	color: #fff;
+}
+
+#banner-page .description .btn:hover{
+	color: #f15a22;
+	border-color: #f15a22;
+}
+
+#breadcrumb{
+	background: #f4f4f4;
+	line-height: 45px;
+	color: #414042;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#breadcrumb ul{
+	list-style-type: none;
+}
+
+#breadcrumb li{
+	float: left;
+	margin-right: 5px;
+}
+
+#breadcrumb li:before{
+	content: '>';
+	margin-right: 5px;
+}
+
+#breadcrumb li:first-child:before{
+	content: '';
+}
+
+#breadcrumb a{
+	color: #414042;
+}
+
+#breadcrumb a:hover{
+	color: #f15a22;
+}
+
+#content-page{
+	padding: 40px 0;
+	font-size: 14px;
+	color: #414042;
+}
+
+#content-page iframe{
+	margin-bottom: 20px;
+}
+
+.inner #newsletter{
+	background: #959595;
+	color: #fff;
+	height: 164px;
+	line-height: 124px;
+	font-size: 15px;
+}
+
+.inner #newsletter input{
+	margin-top: 45px;
+}
+
+.inner #newsletter input[type="submit"]{
+	line-height: 16px;
+	font-size: 12px;
 }
 
 /* Footer */
