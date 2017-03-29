@@ -142,7 +142,7 @@ body.frontend{
 }
 
 #header .menu ul.level-2{
-	/*display: none;*/
+	display: none;
 }
 
 #language{
