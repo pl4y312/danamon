@@ -64,6 +64,13 @@ body.frontend{
 	width: auto;
 }
 
+.frontend .arrow-right{
+	padding-right: 20px;
+	background: url('../img/arrow-right.png') right center no-repeat;
+	display: inline-block;
+	width: auto;
+}
+
 .frontend .more-item{
 	font-size: 16px;
 	margin-top: 30px;
@@ -204,7 +211,7 @@ body.frontend{
 	position: relative;
 }
 
-.inner #container{
+#container .inner{
 	background: #fff;
 }
 
@@ -357,6 +364,51 @@ body.frontend{
 
 .list-style-1 img{
 	margin: 0 10px;
+}
+
+.list-style-2 ul{
+	list-style-type: none;	
+}
+
+.list-style-2 li{
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.list-style-2 li:last-child{
+	border-bottom: 0px;
+}
+
+.list-style-2 .marker{
+	font-size: 48px;
+	font-weight: bold;
+	float: left;
+	line-height: 60px;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+.list-style-2 .description{
+	float: left;
+	width: 300px;
+	padding: 10px 0;
+}
+
+.list-style-2 .title{
+	font-size: 16px;
+	letter-spacing: 0px;
+	margin-bottom: 0px;
+}
+
+.list-style-2 .title a{
+	color: #58595b;
+}
+
+.list-style-2 .title a:hover{
+	color: #f15a22;
+}
+
+.list-style-2 .date{
+	font-size: 12px;
 }
 
 #featured-item{
@@ -536,6 +588,15 @@ body.frontend{
 .inner #newsletter input[type="submit"]{
 	line-height: 16px;
 	font-size: 12px;
+}
+
+#similar-content{
+	background: #f1f2f2;
+	padding: 35px 0;
+}
+
+#similar-content .news-item .title{
+	font-size: 24px;
 }
 
 /* Footer */
