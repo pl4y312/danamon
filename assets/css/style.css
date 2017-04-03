@@ -101,6 +101,30 @@ body.frontend{
 	width: 100%;
 }
 
+.frontend .border-top-orange{
+	border-top: 10px solid #f7931d;
+}
+
+.frontend .bg-gray{
+	background-color: #f1f2f2;
+}
+
+.frontend .bg-gray input,
+.frontend .bg-gray select,
+.frontend .bg-gray textarea{
+	background-color: #fff;
+}
+
+.frontend .bg-white{
+	background-color: #fff;
+}
+
+.frontend .hline{
+	border-bottom: 1px solid #e8e7e5;
+	width: auto;
+	margin: 0 15px 10px 15px;
+}
+
 /* Header */
 #header{
 	background: #fff;
@@ -597,6 +621,27 @@ body.frontend{
 
 #similar-content .news-item .title{
 	font-size: 24px;
+}
+
+.panel-1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.panel-1 select{
+	margin-top: 10px;
+}
+
+.panel-1 input{
+	width: 100%;
+}
+
+.panel-1 input[type="submit"]{
+	border: 1px solid #f15a22;
+	color: #f15a22;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 /* Footer */
