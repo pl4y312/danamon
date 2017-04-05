@@ -125,6 +125,20 @@ body.frontend{
 	margin: 0 15px 10px 15px;
 }
 
+.frontend .btn-2{
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #d1d3d4;
+	text-align: center;
+	line-height: 40px;
+	color: #959595;
+}
+
+.frontend .btn-2:hover{
+	color: #f15a22;
+	border-color: #f15a22;
+}
+
 /* Header */
 #header{
 	background: #fff;
@@ -612,6 +626,58 @@ body.frontend{
 .inner #newsletter input[type="submit"]{
 	line-height: 16px;
 	font-size: 12px;
+}
+
+#suitable-saving{
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+#suitable-saving .title{
+	font-size: 24px;
+}
+
+#suitable-saving thead td{
+	background-color: #f4f4f4;
+	height: 24px;
+	font-size: 16px;
+}
+
+#suitable-saving thead td.alt{
+	/*border-left: 3px solid #fff;*/
+	padding: 0 3px;
+	background-color: #fff;
+}
+
+#suitable-saving thead td select{
+	height: 24px;
+}
+
+#suitable-saving thead td.alt select{
+	height: 40px;
+	line-height: 40px;
+}
+
+#suitable-saving tbody td{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+#suitable-saving tbody tr:first-child td{
+	padding-top: 28px;
+}
+
+#suitable-saving tbody td.alt{
+	background-color: #f8f8f8;
+}
+
+#suitable-saving tbody tr:last-child td{
+	border-bottom: 1px solid #f15a22;
+}
+
+.inner .sharing-social{
+	margin-bottom: 30px;
 }
 
 #similar-content{
