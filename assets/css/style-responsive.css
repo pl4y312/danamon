@@ -148,12 +148,53 @@ Alias: pl4y312
 		width: 750px;
 	}
 
+	#search-form{
+		float: right;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	#header #search-form input{
+		width: 100%;
+		line-height: 60px;
+		height: 60px;
+		background-size: 32px 30px;
+		background-position: right 20px center;
+		border:1px solid #e6e6e6;
+		font-size: 24px;
+	}
+
 	#language{
 		right: 50px;
+		font-size: 20px;
+		top: 10px;
 	}
 
 	#container{
 		padding-bottom: 30px;
+	}
+
+	#newsletter,
+	#newsletter .text-center,
+	.frontend .list-style-1{
+		font-size: 24px;
+	}
+
+	.frontend .list-style-1 li{
+		margin: 10px 0;
+		padding: 10px 0 20px 0;
+	}
+
+	.frontend .list-style-1 img{
+		margin: 0 50px;
+	}
+
+	.frontend .list-style-1 a{
+		color: #414042;
+	}
+
+	#newsletter input{
+		height: 60px;
 	}
 
 	#footer{
