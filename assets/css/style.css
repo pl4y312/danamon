@@ -134,6 +134,11 @@ body.frontend{
 	color: #959595;
 }
 
+.frontend .btn-2.orange{
+	color: #f15a22;
+	border-color: #f15a22;
+}
+
 .frontend .btn-2:hover{
 	color: #f15a22;
 	border-color: #f15a22;
@@ -726,6 +731,17 @@ body.frontend{
 	font-size: 14px;
 }
 
+#download-apps{
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+
+#download-apps .btn-2{
+	line-height: 60px;
+	margin-top: 20px;
+	border-width: 2px;
+}
+
 #follow-us{
 	margin-bottom: 40px;
 }
@@ -739,6 +755,11 @@ body.frontend{
 #follow-us a{
 	display: inline-block;
 	margin-right: 15px;
+}
+
+#follow-us img{
+	width: 15px;
+	height: 13px;
 }
 
 #footer .menu li{

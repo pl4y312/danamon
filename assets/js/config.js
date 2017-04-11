@@ -91,6 +91,10 @@ $(document).ready(function(){
 		$(tab).fadeIn();
 	});
 
+	if( $(window).width() < 992){
+		$('#tab-1 .switch-side .pull-right').removeClass('pull-right');
+	}
+
 
 	/**
 	 *
@@ -190,6 +194,25 @@ $(document).ready(function(){
 			$('#sticky-menu a').removeClass('current');
 		});
 	}
+
+
+	/**
+	 *
+	 * Window On Resize
+	 *
+	 */
+	$(window).on('resize', function(){
+		if($(this).width() < 1200) {
+			$('#header .menu .level-1').css({'right': $(this).width()});
+		}
+		
+		if($(this).width() < 992) {
+			$('#tab-1 .switch-side .pull-right').removeClass('pull-right');
+		} else {
+			$('#tab-1 .switch-side > div').addClass('pull-right');
+		}
+	})
+
 });
 
 function slideshow(){

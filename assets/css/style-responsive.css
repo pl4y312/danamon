@@ -9,6 +9,10 @@ Alias: pl4y312
 		overflow: hidden;
 	}
 
+	#header{
+		padding: 50px 10px 20px 10px;
+	}
+
 	#header #icon-menu-responsive{
 		background: url(../img/icon-40x44-menu-responsive.png) top center no-repeat;
 		position: fixed;
@@ -146,6 +150,36 @@ Alias: pl4y312
 
 	#language{
 		right: 50px;
+	}
+
+	#container{
+		padding-bottom: 30px;
+	}
+
+	#footer{
+		text-align: center;
+	}
+
+	#copyright{
+		font-size: 12px;
+	}
+
+	#follow-us{
+		font-size: 24px;
+	}
+
+	#follow-us a{
+		margin: 30px 15px 20px 15px;
+	}
+
+	#follow-us img{
+		height: 30px;
+		width: 36px;
+	}
+
+	#footer .menu{
+		font-size: 20px;
+		margin-bottom: 25px;
 	}
 
 }
