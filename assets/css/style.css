@@ -125,13 +125,24 @@ body.frontend{
 	margin: 0 15px 10px 15px;
 }
 
+.frontend .btn-1{
+	border: 1px solid #939598;
+	text-align: center;
+	display: block;
+	color: #939598;
+	padding: 12px 5px;
+}
+
 .frontend .btn-2{
 	display: inline-block;
 	width: 100%;
 	border: 1px solid #d1d3d4;
 	text-align: center;
-	line-height: 40px;
 	color: #959595;
+	font-size: 24px;
+	line-height: 60px;
+	margin-top: 20px;
+	border-width: 2px;
 }
 
 .frontend .btn-2.orange{
@@ -754,12 +765,6 @@ body.frontend{
 #download-apps{
 	font-size: 24px;
 	margin-bottom: 50px;
-}
-
-#download-apps .btn-2{
-	line-height: 60px;
-	margin-top: 20px;
-	border-width: 2px;
 }
 
 #follow-us{
