@@ -174,14 +174,68 @@ Alias: pl4y312
 		top: 10px;
 	}
 
-	#banner-page,
+	#banner-page{
+		height: 670px;
+	}
+
 	#banner-page img{
 		height: 670px;
+		position: absolute;
+	    top: -9999px;
+	    bottom: -9999px;
+	    left: -9999px;
+	    right: -9999px;
+	    margin: auto;
 	}
 
 	#banner-page .description{
 		padding-left: 10px;
 		padding-right: 10px;
+		top: auto;
+		bottom: 200px;
+	}
+
+	#banner-page .description .big{
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: 10px;
+	}
+
+	#content-wrapper{
+		margin-top: -180px;
+	}
+
+	#sidebar-wrapper{
+		padding: 0 10px;
+	}
+
+	#sidebar{
+		width: 100%;
+		height: 120px;
+		background-image: url('../img/bg-sidebar-mobile.png');
+		margin-bottom: 50px;
+		color: #fff;
+		padding: 20px 15px 10px 15px;
+		position: relative;
+	}
+
+	#selected-sidebar{
+		font-size: 30px;
+		background: url('../img/arrow-bottom-white.png') center right no-repeat;
+		margin-bottom: 10px;
+	}
+
+	#sidebar ul{
+		display: none;
+		position: absolute;
+		width: 100%;
+		background: #fff;
+		padding: 10px 20px;
+		z-index: 10;
+	}
+
+	#sidebar hr{
+		margin-top: 10px;
 	}
 
 	#container{
@@ -197,6 +251,10 @@ Alias: pl4y312
 	#suitable-saving thead td,
 	#suitable-saving tbody td{
 		font-size: 20px;
+	}
+
+	#suitable-saving thead td.alt select{
+		height: 44px;
 	}
 
 	.inner .sharing-social{

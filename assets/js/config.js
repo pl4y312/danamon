@@ -75,6 +75,20 @@ $(document).ready(function(){
 		return $('.wrap').offset().left;
 	}});
 
+	/**
+	 *
+	 * Sidebar Menu
+	 *
+	 */
+	if( $(window).width() < 992){
+		$('#sidebar ul').width(function(){
+			return $('#sidebar').width() - 40
+		})
+		$('#selected-sidebar').click(function(){
+			$('#sidebar ul').slideToggle();
+		})
+	}
+
 
 	/**
 	 *
