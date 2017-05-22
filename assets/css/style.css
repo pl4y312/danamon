@@ -541,7 +541,7 @@ body.frontend{
 }
 
 .news-item{
-	background: #fff;
+	background: #e7e7e9;
 }
 
 .news-item img{
@@ -573,6 +573,10 @@ body.frontend{
 	overflow: hidden;
 }
 
+#banner-page img{
+	width: 100%;
+}
+
 #banner-page .description{
 	position: absolute;
 	width: 100%;
@@ -582,13 +586,15 @@ body.frontend{
 
 #banner-page .description span{
 	display: block;
-	letter-spacing: 5px;
+	font-size: 15px;
+	max-width: 350px;
 }
 
 #banner-page .description .big{
 	font-size: 36px;
 	line-height: 36px;
 	margin-bottom: 10px;
+	letter-spacing: 5px;
 }
 
 #banner-page .description .btn{
@@ -648,8 +654,8 @@ body.frontend{
 }
 
 .inner #newsletter{
-	background: #959595;
-	color: #fff;
+	background: #e7e7e9;
+	color: #333;
 	height: 164px;
 	line-height: 124px;
 	font-size: 15px;
@@ -657,6 +663,10 @@ body.frontend{
 
 .inner #newsletter input{
 	margin-top: 45px;
+}
+
+.inner #newsletter input[type="text"]{
+	background-color: #fff;
 }
 
 .inner #newsletter input[type="submit"]{
@@ -716,8 +726,88 @@ body.frontend{
 	margin-bottom: 30px;
 }
 
+#solusi{
+	padding: 50px 0;
+}
+
+#solusi .item{
+	width: 160px;
+	height: 150px;
+	padding: 10px;
+	float: left;
+	margin: 15px;
+}
+
+#solusi .icon{
+	height: 80px;
+	width: 100%;
+	text-align: center;
+}
+
+#solusi .text{
+	height: 40px;
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+}
+
+#solusi .item:hover{
+	background: #e7e7e9;
+}
+
+#solusi .item:hover .text{
+	color: #ff6a08;
+}
+
+#inspirasi{
+	padding-top: 50px;
+}
+
+#kemudahan{
+	padding: 50px 0;
+}
+
+#kemudahan .thumb img{
+	width: 100%;
+}
+
+#kemudahan .content{
+	padding-top: 10px;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+#testimonial{
+	background: #f3f3f3;
+	padding: 50px 0;
+}
+
+.testimoni .content{
+	background: #fff;
+	padding: 30px 20px 40px;
+	font-size: 18px;
+}
+
+.testimoni .author{
+	background: #ccc;
+	padding: 20px;
+}
+
+.testimoni .avatar{
+	margin-top: -40px;
+}
+
+.testimoni .name{
+	width: 150px;
+	font-size: 13px;
+}
+
+.testimoni .name strong{
+	font-size: 15px;
+}
+
 #similar-content{
-	background: #f1f2f2;
+	background: #fff;
 	padding: 35px 0;
 }
 
@@ -748,7 +838,7 @@ body.frontend{
 
 /* Footer */
 #footer{
-	padding: 50px 0;
+	padding-top: 50px;
 	color: #6d6e71;
 	position: relative;
 }
