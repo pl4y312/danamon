@@ -453,7 +453,7 @@ body.frontend{
 
 .list-style-2 .description{
 	float: left;
-	width: 300px;
+	width: 370px;
 	padding: 10px 0;
 }
 
@@ -667,11 +667,14 @@ body.frontend{
 
 .inner #newsletter input[type="text"]{
 	background-color: #fff;
+	width: 367px;
 }
 
 .inner #newsletter input[type="submit"]{
 	line-height: 16px;
 	font-size: 12px;
+	background: #999;
+	width: 82px;
 }
 
 #suitable-saving{
@@ -763,6 +766,40 @@ body.frontend{
 	padding-top: 50px;
 }
 
+.inspirasi-item{
+	width: 25%;
+	height: 470px;
+	float: left;
+	position: relative;
+}
+
+.inspirasi-item .description{
+	position: absolute;
+	bottom: 0px;
+	background: url('../img/bg-inspirasi-description.png');
+	width: 100%;
+	color: #fff;
+	padding: 20px 10px;
+	font-size: 15px;
+}
+
+.inspirasi-item .name{
+	font-size: 20px;
+}
+
+.inspirasi-item .news-link{
+	color: #FFF;
+	font-size: 13px;
+	background: url('../img/arrow-next-invert.png') right center no-repeat;
+	padding-right: 25px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.inspirasi-item .news-link:hover{
+	color: #ff6a08;
+}
+
 #kemudahan{
 	padding: 50px 0;
 }
@@ -775,6 +812,13 @@ body.frontend{
 	padding-top: 10px;
 	font-size: 15px;
 	line-height: 24px;
+}
+
+#kemudahan .news-link{
+	display: inline-block;
+	margin-top: 10px;
+	background: url('../img/arrow-next.png') right center no-repeat;
+	padding-right: 25px;
 }
 
 #testimonial{
@@ -809,6 +853,10 @@ body.frontend{
 #similar-content{
 	background: #fff;
 	padding: 35px 0;
+}
+
+#similar-content .news-featured{
+	width: 422px;
 }
 
 #similar-content .news-item .title{
@@ -849,12 +897,21 @@ body.frontend{
 }
 
 #address strong{
-	font-size: 14px;
+	font-size: 17px;
 }
 
 #download-apps{
 	font-size: 24px;
 	margin-bottom: 50px;
+}
+
+#hello{
+	width: 150px;
+	margin-right: 100px;
+}
+
+#hello img{
+	width: 150px;
 }
 
 #follow-us{
@@ -903,13 +960,13 @@ body.frontend{
 }
 
 #subsidiary{
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 	margin-bottom: 115px;
 }
 
 #subsidiary div{
 	margin-bottom: 12px;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 #subsidiary a{
