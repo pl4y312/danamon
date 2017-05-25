@@ -138,6 +138,24 @@ $(document).ready(function(){
 
 	/**
 	 *
+	 * Sidebar Submenu
+	 *
+	 */
+	$("#sidebar > ul > li.active").find("ul").show();
+	$("#sidebar > ul > li").has("ul").append('<div class="arrow-submenu"></div>');
+	$("#sidebar > ul > li > a").on("click", function(e){
+		e.preventDefault();
+		if(!$(this).closest('li').hasClass('active')){
+			$("#sidebar ul ul").slideUp();
+			$("#sidebar > ul > li.active").removeClass('active');
+		}
+		$(this).closest('li').toggleClass('active');
+		$(this).siblings('ul').slideToggle();
+	})
+
+
+	/**
+	 *
 	 * Scroll to top
 	 *
 	 */

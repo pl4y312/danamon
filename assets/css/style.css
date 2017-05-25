@@ -254,19 +254,47 @@ body.frontend{
 }
 
 #sidebar li{
-	border-bottom: 1px solid #d1d3d4;
 	font-size: 14px;
+	width: 100%;
+	position: relative;
+}
+
+#sidebar li .arrow-submenu{
+	position: absolute;
+	right: 0px;
+	top: 22px;
+	width: 12px;
+	height: 7px;
+	background-image: url('../img/arrow-sidebar-has-submenu.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+#sidebar li.active .arrow-submenu{
+	background-position: center bottom;
 }
 
 #sidebar a{
 	line-height: 50px;
 	display: block;
 	color: #6d6e71;
+	border-bottom: 1px solid #d1d3d4;
 }
 
+#sidebar .active > a,
 #sidebar a:hover{
 	color: #f15a22;
 	font-weight: bold;
+}
+
+#sidebar ul ul{
+	display: none;
+	padding-left: 30px;
+	border-bottom: 1px solid #d1d3d4;
+}
+
+#sidebar ul ul a{
+	border-bottom: 0px;
 }
 
 /* Container */
@@ -338,6 +366,28 @@ body.frontend{
 #slideshow #slideshow-nav li.active{
 	background-position: center bottom;
 }
+
+#slideshow-2{
+	width: 100%;
+	height: 365px;
+	position: relative;
+	overflow: hidden;
+}
+
+#slideshow-2 .item{
+	position: absolute;
+	overflow: hidden;
+}
+
+#slideshow .description{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	z-index: 100;
+	top: 160px;
+	letter-spacing: 5px;
+}
+
 
 #featured-menu{
 	margin-bottom: 20px;
@@ -645,8 +695,21 @@ body.frontend{
 
 #content-page{
 	padding: 40px 0;
-	font-size: 14px;
+	font-size: 12px;
 	color: #414042;
+}
+
+#content-page p{
+	line-height: 20px;
+}
+
+#content-page img{
+	margin-bottom: 20px;
+}
+
+#content-page .title{
+	font-size: 20px;
+	letter-spacing: 0px;
 }
 
 #content-page iframe{
@@ -882,6 +945,27 @@ body.frontend{
 	color: #f15a22;
 	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.invitation{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+.invitation .btn-2{
+	width: auto;
+	padding: 12px 30px;
+	font-size: 15px;
+	color: #333 !important;
+	border-color: #333 !important;
+	line-height: 18px;
+	border-width: 1px;
+}
+
+.invitation .btn-2:hover{
+	color: #f15a22 !important;
+	border-color: #f15a22 !important;
 }
 
 /* Footer */
