@@ -246,7 +246,7 @@ body.frontend{
 
 /* Sidebar */
 #sidebar{
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 #sidebar ul{
@@ -694,7 +694,7 @@ body.frontend{
 }
 
 #content-page{
-	padding: 40px 0;
+	padding: 20px 0 40px;
 	font-size: 12px;
 	color: #414042;
 }
@@ -790,6 +790,15 @@ body.frontend{
 
 .inner .sharing-social{
 	margin-bottom: 30px;
+}
+
+.inner .sharing-social.top{
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.inner .sharing-social a{
+	margin: 0 5px;
 }
 
 #solusi{
@@ -930,6 +939,7 @@ body.frontend{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .panel-1 select{
@@ -943,14 +953,29 @@ body.frontend{
 .panel-1 input[type="submit"]{
 	border: 1px solid #f15a22;
 	color: #f15a22;
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: none;
+	font-size: 16px;
+	padding: 10px 0;
+	height: auto;
+}
+
+.panel-1 .title{
+	text-align: center;
+	font-size: 30px !important;
+	color: #838287;
+}
+
+.panel-1 .col-md-6{
 	margin-bottom: 20px;
 }
 
 .invitation{
 	text-align: center;
 	font-size: 18px;
-	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 .invitation .btn-2{
@@ -966,6 +991,24 @@ body.frontend{
 .invitation .btn-2:hover{
 	color: #f15a22 !important;
 	border-color: #f15a22 !important;
+}
+
+.invitation.orange{
+	background: #F35923;
+	color: #fff !important;
+}
+
+.invitation.orange .btn-2{
+	color: #fff !important;
+	border-color: #fff !important;
+}
+
+.invitation .big{
+	font-size: 25px;
+}
+
+.invitation.orange .btn-2.big{
+	font-size: 20px;
 }
 
 /* Footer */
