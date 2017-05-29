@@ -141,16 +141,17 @@ $(document).ready(function(){
 	 * Sidebar Submenu
 	 *
 	 */
-	$("#sidebar > ul > li.active").find("ul").show();
+	$("#sidebar li.active").children("ul").show();
+	// $("#sidebar > ul > li.active > ul > li.active").children("ul").show();
 	$("#sidebar > ul > li").has("ul").append('<div class="arrow-submenu"></div>');
-	$("#sidebar > ul > li > a").on("click", function(e){
-		e.preventDefault();
-		if(!$(this).closest('li').hasClass('active')){
-			$("#sidebar ul ul").slideUp();
-			$("#sidebar > ul > li.active").removeClass('active');
+	$('#sidebar a').on("click", function(e){
+		var _li = $(this).closest('li');
+		if(_li.has('ul')){
+			e.preventDefault();
+			_li.toggleClass('active');
+			_li.siblings().removeClass('active').find('ul').slideUp();
+			_li.children('ul').slideToggle();
 		}
-		$(this).closest('li').toggleClass('active');
-		$(this).siblings('ul').slideToggle();
 	})
 
 
