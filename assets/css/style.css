@@ -155,6 +155,11 @@ body.frontend{
 	border-color: #f15a22;
 }
 
+hr.bold{
+	border-width: 3px;
+	border-color: #ccc;
+}
+
 /* Header */
 #header{
 	background: #fff;
@@ -1034,6 +1039,32 @@ body.frontend{
 
 .invitation.orange .btn-2.big{
 	font-size: 20px;
+}
+
+#offer-form{
+	margin-bottom: 20px;
+}
+
+#offer-form .text{
+	font-size: 28px;
+	color: #999;
+	margin: 10px 0 30px;
+}
+
+#offer-form input{
+	width: 100%;
+	background: none;
+	border: 1px solid #999;
+}
+
+#offer-form input[type="submit"]{
+	background: #999;
+	border: 1px solid #999;
+	color: #fff;
+}
+
+#offering-list .news-item{
+	margin-bottom: 20px;
 }
 
 /* Footer */
