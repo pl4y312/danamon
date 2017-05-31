@@ -1051,7 +1051,8 @@ hr.bold{
 	margin: 10px 0 30px;
 }
 
-#offer-form input{
+#offer-form input,
+#offer-form select{
 	width: 100%;
 	background: none;
 	border: 1px solid #999;
