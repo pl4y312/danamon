@@ -1082,6 +1082,28 @@ hr.bold{
 	margin-bottom: 20px;
 }
 
+#full-form{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#full-form .form-header{
+	background: #e7e7e9;
+	padding: 30px 100px;
+}
+
+#full-form .form-body{
+	background: #f4f4f4;
+	padding: 20px 100px;
+}
+
+#full-form input,
+#full-form textarea,
+#full-form select{
+	background-color: #fff !important;
+}
+
+
 /* Footer */
 #footer{
 	padding-top: 50px;
