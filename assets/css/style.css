@@ -160,6 +160,20 @@ hr.bold{
 	border-color: #ccc;
 }
 
+.table-2{
+	width: 100%;
+}
+
+.table-2 th{
+	background: #ccc;
+	border: 3px solid #fff !important;
+}
+
+.table-2 td{
+	background: #e7e7e9;
+	border: 3px solid #fff;
+}
+
 /* Header */
 #header{
 	background: #fff;
