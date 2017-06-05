@@ -681,7 +681,7 @@ hr.bold{
 #banner-page .description span{
 	display: block;
 	font-size: 15px;
-	max-width: 350px;
+	max-width: 420px;
 }
 
 #banner-page .description .big{
@@ -1101,6 +1101,34 @@ hr.bold{
 #full-form textarea,
 #full-form select{
 	background-color: #fff !important;
+}
+
+#job-vacancies{
+	background-color: #f3f3f3;
+	padding: 50px 0;
+}
+
+#job-vacancies .item{
+	margin-bottom: 10px;
+}
+
+#job-vacancies .item-title{
+	background-color: #e7e7e9;
+	padding: 20px 30px;
+	cursor: pointer;
+}
+
+#job-vacancies .item-content{
+	background-color: #fff;
+	padding: 20px 30px;
+	display: none;
+}
+
+#job-vacancies .news-link{
+	background: url('../img/arrow-next.png') right center no-repeat;
+	padding-right: 25px;
+	margin-top: 10px;
+	display: inline-block;
 }
 
 

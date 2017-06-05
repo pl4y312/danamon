@@ -154,6 +154,14 @@ $(document).ready(function(){
 		}
 	})
 
+	$("#job-vacancies .item.active").find(".item-content").show();
+	$("#job-vacancies .item-title").on("click", function(e){
+		var item = $(this).closest(".item");
+		item.find('.item-content').slideToggle();
+		// item.toggleClass('active');
+		item.siblings().removeClass('active').find('.item-content').slideUp();
+	})
+
 
 	/**
 	 *
