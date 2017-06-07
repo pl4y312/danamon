@@ -1108,27 +1108,75 @@ hr.bold{
 	padding: 50px 0;
 }
 
-#job-vacancies .item{
+.accordion .item{
 	margin-bottom: 10px;
 }
 
-#job-vacancies .item-title{
+.accordion .item-title{
 	background-color: #e7e7e9;
 	padding: 20px 30px;
 	cursor: pointer;
+	position: relative;
 }
 
-#job-vacancies .item-content{
+.accordion .arrow{
+	position: absolute;
+	right: 30px;
+	top: 25px;
+	background: url('../img/arrow-accordion.png') center bottom no-repeat;
+	width: 12px;
+	height: 7px;
+}
+
+.accordion .active .arrow{
+	background-position: center top;
+}
+
+.accordion .item-content{
 	background-color: #fff;
 	padding: 20px 30px;
 	display: none;
 }
 
-#job-vacancies .news-link{
+.accordion .news-link{
 	background: url('../img/arrow-next.png') right center no-repeat;
 	padding-right: 25px;
 	margin-top: 10px;
 	display: inline-block;
+}
+
+.profile-page .profile{
+	position: relative;
+	height: 225px;
+}
+
+.profile-page .thumbnail{
+	width: 225px;
+	height: 225px;
+	overflow: hidden;
+	border: 0px;
+	padding: 0px;
+	border-radius: 0px;
+}
+
+.profile-page .thumbnail img{
+	max-width: 100%;
+}
+
+.profile-page .description{
+	width: 450px;
+	bottom: 20px;
+	right: 0px;
+	position: absolute;
+}
+
+.profile-page .name{
+	font-size: 22px;
+}
+
+.profile-page .title{
+	font-size: 17px;
+	margin-bottom: 10px;
 }
 
 
