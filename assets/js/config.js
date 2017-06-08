@@ -142,16 +142,15 @@ $(document).ready(function(){
 	 *
 	 */
 	$("#sidebar li.active").children("ul").show();
-	// $("#sidebar > ul > li.active > ul > li.active").children("ul").show();
 	$("#sidebar > ul > li").has("ul").append('<div class="arrow-submenu"></div>');
 	$('#sidebar a').on("click", function(e){
 		var _li = $(this).closest('li');
-		if(_li.has('ul')){
+		if(_li.has('ul').length){
 			e.preventDefault();
 			_li.toggleClass('active');
 			_li.siblings().removeClass('active').find('ul').slideUp();
 			_li.children('ul').slideToggle();
-		}
+		};
 	})
 
 	/**
