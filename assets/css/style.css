@@ -772,6 +772,15 @@ ul.list-text-1 li{
 	margin-bottom: 20px;
 }
 
+#content-page ul{
+	padding-left: 15px;
+}
+
+#content-page li{
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
 .inner #newsletter{
 	background: #e7e7e9;
 	color: #333;
