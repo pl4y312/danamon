@@ -1278,6 +1278,27 @@ ul.list-text-1 li{
 	margin-bottom: 10px;
 }
 
+.carousel img{
+	margin-bottom: 0px !important;
+}
+
+.carousel .carousel-control .glyphicon{
+	margin-top: -20px;
+	width: 26px;
+	height: 48px;
+	background-image: url('../img/arrow-carousel.png');
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+.carousel .carousel-control .next{
+	background-position: center right;
+}
+
+.carousel .carousel-control .glyphicon:before{
+	content: '';
+}
+
 /* Footer */
 #footer{
 	padding-top: 50px;
