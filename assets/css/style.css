@@ -11,6 +11,7 @@ body.frontend{
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	position: relative;
+	padding-right: 80px;
 }
 
 .frontend a{
@@ -1232,6 +1233,37 @@ ul.list-text-1 li{
 	margin-bottom: 10px;
 }
 
+.pagination{
+	display: block;
+	padding: 20px 0;
+}
+
+.pagination a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #ccc;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	color: #fff;
+}
+
+.pagination a.previous,
+.pagination a.next{
+	background-color: #fff;
+	background-image: url('../img/arrow-pagination.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.pagination a.next{
+	background-position: right center;
+}
+
+.pagination a.current,
+.pagination a:hover{
+	background-color: #49BE9B;
+}
 
 /* Footer */
 #footer{
