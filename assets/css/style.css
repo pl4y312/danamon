@@ -1182,9 +1182,13 @@ ul.list-text-1 li{
 }
 
 .accordion .item-content{
-	background-color: #fff;
+	background-color: #f4f4f4;
 	padding: 20px 30px;
 	display: none;
+}
+
+#job-vacancies .item-content{
+	background-color: #fff;
 }
 
 .accordion .news-link{
@@ -1297,6 +1301,18 @@ ul.list-text-1 li{
 
 .carousel .carousel-control .glyphicon:before{
 	content: '';
+}
+
+#annual-report .item{
+	margin-bottom: 40px;
+	font-size: 15px;
+	color: #333;
+	cursor: pointer;
+}
+
+#annual-report img{
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 /* Footer */
