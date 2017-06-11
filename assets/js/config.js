@@ -258,6 +258,15 @@ $(document).ready(function(){
 		}
 	})
 
+	/**
+	 *
+	 * Utilities
+	 *
+	 */
+	$('#sidebar-right').css("margin-top", function(){
+		return $('.content-meta').height() + 50;
+	})
+
 });
 
 function slideshow(){

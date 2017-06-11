@@ -332,6 +332,14 @@ ul.list-text-1 li{
 	display: none;
 }
 
+#sidebar-right .item{
+	margin-bottom: 20px;
+}
+
+#sidebar-right img{
+	max-width: 100%;
+}
+
 /* Container */
 #container{
 	background: #f4f4f4;
@@ -761,11 +769,16 @@ ul.list-text-1 li{
 
 #content-page img{
 	margin-bottom: 20px;
+	max-width: 100%;
 }
 
 #content-page .title{
 	font-size: 20px;
 	letter-spacing: 0px;
+}
+
+#content-page .title.big{
+	font-size: 35px;
 }
 
 #content-page iframe{
@@ -779,6 +792,39 @@ ul.list-text-1 li{
 #content-page li{
 	padding-left: 15px;
 	margin-bottom: 15px;
+}
+
+#content-page .list-style-2 .title{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+#content-page .list-style-2 ul{
+	padding-left: 0px;
+}
+
+#content-page .list-style-2 li{
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+#content-page .list-style-2 .marker{
+	font-size: 40px;
+	line-height: 40px;
+}
+
+#content-page .list-style-2 li .title{
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+
+#content-page .list-style-2 .description{
+	width: 220px;
+}
+
+#content-page .list-style-2 .date{
+	font-size: 11px;
+	margin-top: 5px;
 }
 
 .inner #newsletter{
@@ -864,6 +910,10 @@ ul.list-text-1 li{
 
 .inner .sharing-social a{
 	margin: 0 5px;
+}
+
+.inner .sharing-social img{
+	margin-bottom: 0px !important;
 }
 
 #solusi{
@@ -1312,6 +1362,15 @@ ul.list-text-1 li{
 
 #annual-report img{
 	width: 100%;
+	margin-bottom: 10px;
+}
+
+.content-meta{
+	margin-bottom: 30px;
+}
+
+.content-meta .title{
+	line-height: 40px;
 	margin-bottom: 10px;
 }
 
