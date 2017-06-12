@@ -552,10 +552,6 @@ ul.list-text-1 li{
 	border-bottom: 1px solid #c1c1c1;
 }
 
-.list-style-2 li:last-child{
-	border-bottom: 0px;
-}
-
 .list-style-2 .marker{
 	font-size: 48px;
 	font-weight: bold;
@@ -575,6 +571,10 @@ ul.list-text-1 li{
 	font-size: 16px;
 	letter-spacing: 0px;
 	margin-bottom: 0px;
+}
+
+.list-style-2 .title.big{
+	font-size: 25px;
 }
 
 .list-style-2 .title a{
@@ -781,6 +781,10 @@ ul.list-text-1 li{
 	font-size: 35px;
 }
 
+#content-page .title.medium{
+	font-size: 25px;
+}
+
 #content-page iframe{
 	margin-bottom: 20px;
 }
@@ -794,9 +798,8 @@ ul.list-text-1 li{
 	margin-bottom: 15px;
 }
 
-#content-page .list-style-2 .title{
+#content-page .list-style-2 .title.big{
 	font-size: 25px;
-	margin-bottom: 20px;
 }
 
 #content-page .list-style-2 ul{
@@ -825,6 +828,54 @@ ul.list-text-1 li{
 #content-page .list-style-2 .date{
 	font-size: 11px;
 	margin-top: 5px;
+}
+
+#container .news-link.arrow{
+	background: url('../img/arrow-next.png') right center no-repeat;
+	padding-right: 25px;
+	display: inline-block;
+}
+
+#container .news-link.arrow-invert{
+	background-image: url('../img/arrow-next-invert.png');
+}
+
+#container .news-link.arrow-green{
+	background-image: url('../img/arrow-next-green.png');
+}
+
+#container .news-link.arrow-bottom-green{
+	background-image: url('../img/arrow-bottom-green.png');
+}
+
+.list-style-3{
+	margin-top: 30px;
+}
+
+.list-style-3 li{
+	list-style: none;
+	border-bottom: 2px solid #d2d2d2;
+	padding: 20px 0;
+}
+
+.list-style-3 .thumbnail{
+	padding: 0px;
+	border: 0px;
+	width: 112px;
+}
+
+.list-style-3 .description{
+	width: 320px;
+}
+
+.list-style-3 .title{
+	font-size: 15px;
+	letter-spacing: 0px;
+	margin-bottom: 5px;
+}
+
+.list-style-3 .date{
+	font-size: 11px;
 }
 
 .inner #newsletter{
@@ -1372,6 +1423,20 @@ ul.list-text-1 li{
 .content-meta .title{
 	line-height: 40px;
 	margin-bottom: 10px;
+}
+
+.list-video .item{
+	margin-bottom: 20px;
+}
+
+.list-video .item img,
+.list-video .item iframe{
+	width: 100%;
+}
+
+.list-video .item .text-center{
+	font-size: 15px;
+	padding: 15px;
 }
 
 /* Footer */
