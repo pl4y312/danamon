@@ -106,13 +106,13 @@ body.frontend{
 	border-top: 10px solid #f7931d;
 }
 
-.frontend .bg-gray{
+.frontend .bg-grey{
 	background-color: #f1f2f2;
 }
 
-.frontend .bg-gray input,
-.frontend .bg-gray select,
-.frontend .bg-gray textarea{
+.frontend .bg-grey input,
+.frontend .bg-grey select,
+.frontend .bg-grey textarea{
 	background-color: #fff;
 }
 
@@ -1438,6 +1438,67 @@ ul.list-text-1 li{
 	font-size: 15px;
 	padding: 15px;
 }
+
+.contact-page .item{
+	margin-bottom: 30px;
+}
+
+.contact-address{
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.contact-address > .pull-left{
+	padding-top: 20px;
+}
+
+.contact-address .clearfix{
+	margin-bottom: 20px;
+}
+
+.contact-address .icon{
+	width: 95px;
+	text-align: center;
+}
+
+.contact-address .address{
+	width: 230px;
+}
+
+.contact-form{
+	padding: 50px 0;
+}
+
+.contact-form .title{
+	margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.contact-form select{
+	background-image: url('../img/arrow-select.png');
+	background-repeat: no-repeat;
+	background-position: center right 15px;
+}
+
+.contact-form input[type="submit"]{
+	width: 100%;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 15px 0;
+	height: auto;
+}
+
 
 /* Footer */
 #footer{
