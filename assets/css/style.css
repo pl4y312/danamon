@@ -110,6 +110,10 @@ body.frontend{
 	background-color: #f1f2f2;
 }
 
+.frontend .bg-grey .news-featured{
+	background-color: #fff;
+}
+
 .frontend .bg-grey input,
 .frontend .bg-grey select,
 .frontend .bg-grey textarea{
@@ -184,6 +188,10 @@ ul.list-text-1{
 ul.list-text-1 li{
 	padding-left: 15px;
 	margin-bottom: 15px;
+}
+
+section{
+	padding: 50px 0;
 }
 
 /* Header */
@@ -496,6 +504,24 @@ ul.list-text-1 li{
 	display: none;
 }
 
+#featured-menu-2 > div{
+	height: 300px;
+	font-size: 15px;
+	padding-top: 90px;
+}
+
+#featured-menu-2 > div:nth-child(odd){
+	background-color: #f4f4f4;
+}
+
+#featured-menu-2 > div:nth-child(even){
+	background-color: #e8e8e8;
+}
+
+#featured-menu-2 div div{
+	padding: 30px 30px 0;
+}
+
 #newsletter{
 	background: #fff;
 	padding: 20px 10px;
@@ -681,46 +707,61 @@ ul.list-text-1 li{
 	display: none;
 }
 
-#banner-page{
+#banner-page,
+.banner-wide{
 	height: 250px;
 	position: relative;
 	overflow: hidden;
 }
 
-#banner-page img{
+#banner-page img,
+.banner-wide img{
 	width: 100%;
 }
 
-#banner-page .description{
+#banner-page .description,
+.banner-wide .description{
 	position: absolute;
 	width: 100%;
 	top: 60px;
 	color: #fff;
 }
 
-#banner-page .description span{
+#banner-page .description span,
+.banner-wide .description span{
 	display: block;
 	font-size: 15px;
 	max-width: 420px;
 }
 
-#banner-page .description .big{
+#banner-page .description .big,
+.banner-wide .description .big{
 	font-size: 36px;
 	line-height: 36px;
 	margin-bottom: 10px;
 	letter-spacing: 5px;
 }
 
-#banner-page .description .btn{
+#banner-page .description .btn,
+.banner-wide .description .btn{
 	border: 1px solid #fff;
 	padding: 10px 40px;
 	border-radius: 0px 0px 0px 0px;
 	color: #fff;
 }
 
-#banner-page .description .btn:hover{
+#banner-page .description .btn:hover,
+.banner-wide .description .btn:hover{
 	color: #f15a22;
 	border-color: #f15a22;
+}
+
+.banner-wide{
+	margin-top: 5px;
+}
+
+.banner-wide .btn{
+	margin-top: 30px;
 }
 
 #breadcrumb{
