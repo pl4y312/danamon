@@ -267,6 +267,35 @@ $(document).ready(function(){
 		return $('.content-meta').height() + 50;
 	})
 
+	/**
+	 * 
+	 * Form Carousel
+	 * 
+	 */
+	var frameWidth = $('.form-carousel form').width();
+	$('.form-carousel .wrap-content-carousel').width(function(){
+		return 3 * frameWidth;
+	});
+	$('.form-carousel .content-carousel').width(function(){
+		return frameWidth;
+	});
+	$('.form-carousel .content-carousel .next-link').on('click', function(e){
+		e.preventDefault();
+		$(this)
+			.closest('.content-carousel')
+			.animate({marginLeft: frameWidth * -1}, 500)
+			.next('.content-carousel')
+			.animate({marginLeft: 0}, 500)
+	})
+	$('.form-carousel .content-carousel .prev-link').on('click', function(e){
+		e.preventDefault();
+		$(this)
+			.closest('.content-carousel')
+			.animate({marginLeft: frameWidth}, 500)
+			.prev('.content-carousel')
+			.animate({marginLeft: 0}, 500)
+	})
+
 });
 
 function slideshow(){

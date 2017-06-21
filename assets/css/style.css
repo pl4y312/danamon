@@ -1343,6 +1343,15 @@ section{
 	background-position: right bottom;
 }
 
+.form-carousel form{
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-carousel .content-carousel{
+	float: left;
+}
+
 #job-vacancies{
 	background-color: #f3f3f3;
 	padding: 50px 0;
