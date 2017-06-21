@@ -1257,13 +1257,90 @@ section{
 
 #full-form .form-body{
 	background: #f4f4f4;
-	padding: 20px 100px;
+	padding: 20px 100px 50px;
+	position: relative;
 }
 
 #full-form input,
 #full-form textarea,
 #full-form select{
 	background-color: #fff !important;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#full-form input[type="checkbox"],
+#full-form input[type="radio"]{
+	height: inherit;
+}
+
+#full-form select[multiple]{
+	height: auto;
+	background-image: none;
+}
+
+#full-form label,
+#full-form .form-control-static{
+	line-height: 20px;
+}
+
+#full-form .form-header .title{
+	margin-bottom: 0px !important;
+}
+
+#full-form .form-header .subtitle{
+	margin-top: 20px;
+}
+
+#full-form .btn{
+	display: block;
+	border: 1px solid #c0c0c1;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	line-height: 30px;
+	text-align: center;
+	color: #8D8D8D;
+}
+
+#full-form .btn .icon{
+	margin-bottom: -2px;
+}
+
+#full-form .btn.prev-link .icon{
+	display: inline-block;
+	content: '';
+	width: 7px;
+	height: 13px;
+	background-image: url('../img/arrow-prev-next-form.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+#full-form .btn.next-link .icon{
+	display: inline-block;
+	content: '';
+	width: 7px;
+	height: 13px;
+	background-image: url('../img/arrow-prev-next-form.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+#full-form .btn:hover{
+	color: #f60;
+	border: 1px solid #f60;
+}
+
+#full-form .btn.prev-link:hover .icon{
+	background-position: left bottom;
+}
+
+#full-form .btn.next-link:hover .icon{
+	background-position: right bottom;
 }
 
 #job-vacancies{
