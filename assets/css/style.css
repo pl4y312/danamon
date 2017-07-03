@@ -259,8 +259,9 @@ section{
 	border-top: 5px solid #f7931d;
 	padding-top: 50px;
 	padding-bottom: 20px;
-	position: relative;
+	position: fixed;
 	z-index: 1000;
+	width: 100%;
 }
 
 #header .wrap > div{
@@ -411,6 +412,7 @@ section{
 #container{
 	background: #f4f4f4;
 	position: relative;
+	padding-top: 109px;
 }
 
 #container .inner{

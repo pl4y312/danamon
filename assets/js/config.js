@@ -307,6 +307,22 @@ $(document).ready(function(){
 		}, 500);
 	})
 
+	if( $(window).width() < 992 ) {
+		var currentPosition = 0
+		$(window).scroll(function() {
+			if( $(this).scrollTop() > 109 ) {
+				if( $(this).scrollTop() < currentPosition ) {
+					$('#header').css('position', 'fixed');
+				} else {
+					$('#header').css('position', 'absolute');
+				}
+			} else {
+				$('#header').css('position', 'absolute');
+			}
+			currentPosition = $(this).scrollTop()
+		})
+	}
+
 });
 
 function slideshow(){

@@ -152,6 +152,10 @@ Alias: pl4y312
 		width: 750px;
 	}
 
+	#header{
+		position: absolute;
+	}
+
 	#search-form{
 		float: right;
 		width: 100%;
@@ -240,6 +244,7 @@ Alias: pl4y312
 
 	#container{
 		padding-bottom: 30px;
+		padding-top: 109px;
 	}
 
 	#content-page{
