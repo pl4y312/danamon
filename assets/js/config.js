@@ -281,19 +281,30 @@ $(document).ready(function(){
 	});
 	$('.form-carousel .content-carousel .next-link').on('click', function(e){
 		e.preventDefault();
+		var nextIndexContent = $(this).closest('.content-carousel').index() + 1
+		$('.step-carousel li').eq(nextIndexContent).addClass('current')
+		console.log($(this).closest('.content-carousel').index())
 		$(this)
 			.closest('.content-carousel')
 			.animate({marginLeft: frameWidth * -1}, 500)
 			.next('.content-carousel')
-			.animate({marginLeft: 0}, 500)
+			.animate({marginLeft: 0}, 500);
+		$('html, body').animate({
+			scrollTop: $('.form-carousel').offset().top
+		}, 500);
 	})
 	$('.form-carousel .content-carousel .prev-link').on('click', function(e){
 		e.preventDefault();
+		var currentIndexContent = $(this).closest('.content-carousel').index()
+		$('.step-carousel li').eq(currentIndexContent).removeClass('current')
 		$(this)
 			.closest('.content-carousel')
 			.animate({marginLeft: frameWidth}, 500)
 			.prev('.content-carousel')
 			.animate({marginLeft: 0}, 500)
+		$('html, body').animate({
+			scrollTop: $('.form-carousel').offset().top
+		}, 500);
 	})
 
 });
