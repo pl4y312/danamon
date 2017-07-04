@@ -1575,6 +1575,10 @@ section{
 	margin-bottom: 0px !important;
 }
 
+.carousel .carousel-control{
+	opacity: 1;
+}
+
 .carousel .carousel-control .glyphicon{
 	margin-top: -20px;
 	width: 26px;
