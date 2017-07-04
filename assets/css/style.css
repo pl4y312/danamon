@@ -252,6 +252,63 @@ section{
 	text-align: left !important;
 }
 
+.row-condensed{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.row-condensed .col-lg-1,
+.row-condensed .col-lg-10,
+.row-condensed .col-lg-11,
+.row-condensed .col-lg-12,
+.row-condensed .col-lg-2,
+.row-condensed .col-lg-3,
+.row-condensed .col-lg-4,
+.row-condensed .col-lg-5,
+.row-condensed .col-lg-6,
+.row-condensed .col-lg-7,
+.row-condensed .col-lg-8,
+.row-condensed .col-lg-9,
+.row-condensed .col-md-1,
+.row-condensed .col-md-10,
+.row-condensed .col-md-11,
+.row-condensed .col-md-12,
+.row-condensed .col-md-2,
+.row-condensed .col-md-3,
+.row-condensed .col-md-4,
+.row-condensed .col-md-5,
+.row-condensed .col-md-6,
+.row-condensed .col-md-7,
+.row-condensed .col-md-8,
+.row-condensed .col-md-9,
+.row-condensed .col-sm-1,
+.row-condensed .col-sm-10,
+.row-condensed .col-sm-11,
+.row-condensed .col-sm-12,
+.row-condensed .col-sm-2,
+.row-condensed .col-sm-3,
+.row-condensed .col-sm-4,
+.row-condensed .col-sm-5,
+.row-condensed .col-sm-6,
+.row-condensed .col-sm-7,
+.row-condensed .col-sm-8,
+.row-condensed .col-sm-9,
+.row-condensed .col-xs-1,
+.row-condensed .col-xs-10,
+.row-condensed .col-xs-11,
+.row-condensed .col-xs-12,
+.row-condensed .col-xs-2,
+.row-condensed .col-xs-3,
+.row-condensed .col-xs-4,
+.row-condensed .col-xs-5,
+.row-condensed .col-xs-6,
+.row-condensed .col-xs-7,
+.row-condensed .col-xs-8,
+.row-condensed .col-xs-9{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 /* Header */
 #header{
 	background: #fff;
@@ -747,6 +804,7 @@ section{
 
 .news-item img{
 	width: 100%;
+	height: auto;
 }
 
 .news-item .news-title{
@@ -1499,6 +1557,53 @@ section{
 .accordion.orange .item-content{
 	background-color: #f4f4f4;
 	color: #000;
+}
+
+.list-profile .profile{
+	font-family: 'Futura Md BT', 'Futura Medium BT Alt' !important;
+	background: #e7e7e9;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+}
+
+.list-profile .thumbnail{
+	border: none;
+	background: none;
+	padding: 0px;
+}
+
+.list-profile .name{
+	font-size: 22px;
+	padding: 0 15px;
+}
+
+.list-profile .title{
+	letter-spacing: 0px;
+	font-size: 17px;
+	padding: 0 15px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.list-profile .teaser{
+	font-size: 13px;
+	font-family: "Myriad Pro";
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+.list-profile .more-link{
+	font-size: 13px;
+	padding-right: 25px;
+	display: inline-block;
+	background: url('../img/arrow-next.png') right center no-repeat;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.list-profile .pagination{
+	margin-top: 20px;
 }
 
 .profile-page .profile{
