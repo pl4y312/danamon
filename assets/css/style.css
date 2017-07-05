@@ -89,7 +89,7 @@ body.frontend{
 	height: 30px;
 	border: 0px;
 	padding: 0 10px;
-	background: url('../img/arrow-bottom-full.png') right 10px center no-repeat;
+	background: url('../img/arrow-bottom-green.png') right 10px center no-repeat;
 	width: 100%;
 	background-color: #f4f4f4;
 	-moz-appearance: none;
@@ -1557,6 +1557,25 @@ section{
 .accordion.orange .item-content{
 	background-color: #f4f4f4;
 	color: #000;
+}
+
+.filter-form{
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	height: auto;
+}
+
+.filter-form input,
+.filter-form select{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.filter-form input[type="submit"]{
+	background-color: #999;
+	color: #fff;
 }
 
 .list-profile .profile{
