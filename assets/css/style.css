@@ -579,6 +579,11 @@ section{
 	margin-top: 30px;
 }
 
+#featured-menu-wrap{
+	position: relative;
+	z-index: 2;
+}
+
 #featured-menu{
 	margin-bottom: 20px;
 	font-size: 16px;
@@ -591,10 +596,15 @@ section{
 	height: 123px;
 	border-bottom: 5px solid #e1e1e1;
 	background: #fff;
-	padding: 15px 6px;
+	padding: 15px 0;
 	text-align: center;
 	margin: 0px !important;
 	cursor: pointer;
+	position: relative;
+}
+
+#featured-menu .tab-menu span{
+	padding: 15px 6px;
 }
 
 #featured-menu .tab-menu:first-child{
@@ -614,8 +624,33 @@ section{
 #featured-menu .tab-menu:hover,
 #featured-menu .tab-menu.current{
 	color: #f15a22;
-	font-weight: bold;
 	border-bottom-color: #f15a22;
+}
+
+#featured-menu .tab-menu:hover .submenu{
+	display: block;
+}
+
+#featured-menu .submenu{
+	display: none;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	top: 117px;
+}
+
+#featured-menu .submenu a{
+	display: block;
+	color: #fff;
+	line-height: 50px;
+	width: 100%;
+	background-color: #FEA30A;
+	border-top: 1px solid #fff;
+}
+
+#featured-menu .submenu a:hover{
+	background-color: #f15a22;
+	font-weight: normal;
 }
 
 .tab-content{
