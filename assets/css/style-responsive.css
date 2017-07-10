@@ -88,7 +88,7 @@ Alias: pl4y312
 	}
 
 	#footer{
-		padding-bottom: 150px;
+		padding-bottom: 77px;
 	}
 
 	#gototop{
@@ -315,27 +315,72 @@ Alias: pl4y312
 		text-align: center;
 	}
 
-	#copyright{
+	#footer .wrap{
+		padding-bottom: 50px;
+	}
+
+	#footer #download-apps{
+		font-size: 17px;
+	}
+
+	#footer #download-apps .btn-2{
+		font-size: 15px;
+		line-height: 42px;
+	}
+
+	#footer #address{
+		font-size: 15px;
+	}
+
+	#footer #hello{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	#footer #follow-us{
+		font-size: 17px;
+	}
+
+	#footer #follow-us a{
+		margin: 10px 5px 10px 5px;
+	}
+
+	#footer #follow-us img{
+		width: 20px;
+		height: auto;
+	}
+
+	#footer #copyright{
 		font-size: 12px;
 	}
 
-	#follow-us{
-		font-size: 24px;
+	#footer #subsidiary-mobile{
+		font-size: 17px;
+		margin-bottom: 40px;
 	}
 
-	#follow-us a{
-		margin: 30px 15px 20px 15px;
-	}
-
-	#follow-us img{
-		height: 30px;
-		width: 36px;
+	#footer #subsidiary-mobile a{
+		display: block;
+		margin-top: 10px;
 	}
 
 	#footer .menu{
-		font-size: 20px;
+		font-size: 12px;
 		margin-bottom: 25px;
 	}
+
+	#footer #footer-corner-mobile{
+		width: 100%;
+		height: 50px;
+	}
+
+	#footer #footer-corner-mobile img{
+		width: 200px;
+		position: absolute;
+		right: 0px;
+	}
+
 }
 
 /* Extra Small Device | col-xs- */
