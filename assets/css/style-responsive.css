@@ -3,6 +3,62 @@ Author: Iskandar Zulkarnain
 Alias: pl4y312
 */
 
+/* Fonts */
+@font-face{
+	font-family: 'Calibri Alt';
+	src: url('../fonts/calibri.ttf');
+}
+
+@font-face{
+	font-family: 'Calibri Alt Bold';
+	src: url('../fonts/calibrib.ttf');
+}
+
+@font-face{
+	font-family: 'Calibri Alt Italic';
+	src: url('../fonts/calibrii.ttf');
+}
+
+@font-face{
+	font-family: 'Calibri Alt Light';
+	src: url('../fonts/calibril.ttf');
+}
+
+@font-face{
+	font-family: 'Calibri Alt Light Italic';
+	src: url('../fonts/calibrili.ttf');
+}
+
+@font-face{
+	font-family: 'Calibri Alt Bold Italic';
+	src: url('../fonts/calibriz.ttf');
+}
+
+@font-face{
+	font-family: 'Futura Medium BT Alt';
+	src: url('../fonts/futura-medium-bt.ttf');
+}
+
+@font-face{
+	font-family: 'HelveticaNeueLTStd-Bd';
+	src: url('../fonts/helveticaneueltstd-bd.otf');
+}
+
+@font-face{
+	font-family: 'HelveticaNeueLTStd-BdEx';
+	src: url('../fonts/helveticaneueltstd-bdex.otf');
+}
+
+@font-face{
+	font-family: 'HelveticaNeueLTStd-LdEx';
+	src: url('../fonts/helveticaneueltstd-ltex.otf');
+}
+
+@font-face{
+	font-family: 'HelveticaNeueLTStd-TdEx';
+	src: url('../fonts/helveticaneueltstd-thex.otf');
+}
+
 /* Medium Device | col-md- */
 @media(max-width: 1199px){
 	body.disableScroll{
@@ -185,11 +241,11 @@ Alias: pl4y312
 	#banner-page img{
 		height: 670px;
 		position: absolute;
-	    top: -9999px;
-	    bottom: -9999px;
-	    left: -9999px;
-	    right: -9999px;
-	    margin: auto;
+		top: -9999px;
+		bottom: -9999px;
+		left: -9999px;
+		right: -9999px;
+		margin: auto;
 	}
 
 	#banner-page .description{
@@ -200,13 +256,13 @@ Alias: pl4y312
 	}
 
 	#banner-page .description .big{
-		font-size: 50px;
-		line-height: 50px;
-		letter-spacing: 10px;
+		font-size: 26px;
+		line-height: 26px;
+		letter-spacing: 3px;
 	}
 
 	#content-wrapper{
-		margin-top: -180px;
+		padding-top: 30px;
 	}
 
 	#sidebar-wrapper{
@@ -215,31 +271,47 @@ Alias: pl4y312
 
 	#sidebar{
 		width: 100%;
-		height: 120px;
-		background-image: url('../img/bg-sidebar-mobile.png');
-		margin-bottom: 50px;
+		background-color: #666;
+		margin-bottom: 10px;
 		color: #fff;
-		padding: 20px 15px 10px 15px;
+		padding: 15px 15px 10px 15px;
 		position: relative;
 	}
 
+	#sidebar .label{
+		font-size: 13px;
+		padding: 0px;
+	}
+
 	#selected-sidebar{
-		font-size: 30px;
-		background: url('../img/arrow-bottom-white.png') center right no-repeat;
+		font-size: 18px;
+		background: url('../img/arrow-bottom-orange.png') center right no-repeat;
+		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 
-	#sidebar ul{
+	#sidebar > ul{
 		display: none;
 		position: absolute;
 		width: 100%;
 		background: #fff;
 		padding: 10px 20px;
 		z-index: 10;
+		overflow: hidden;
+	}
+
+	#sidebar .active .arrow-submenu{
+		background-position: right top !important;
+	}
+
+	#sidebar .active > ul{
+		display: none;
+		width: 100% !important;
 	}
 
 	#sidebar hr{
 		margin-top: 10px;
+		margin-bottom: 5px;
 	}
 
 	#container{

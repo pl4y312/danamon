@@ -485,13 +485,13 @@ section{
 	top: 22px;
 	width: 12px;
 	height: 7px;
-	background-image: url('../img/arrow-sidebar-has-submenu.jpg');
-	background-position: center top;
+	background-image: url('../img/arrow-sidebar-has-submenu.png');
+	background-position: left top;
 	background-repeat: no-repeat;
 }
 
 #sidebar li.active .arrow-submenu{
-	background-position: center bottom;
+	background-position: right bottom;
 }
 
 #sidebar a{
@@ -576,6 +576,7 @@ section{
 
 #slideshow .description .big{
 	font-size: 52px;
+	font-family: 'Futura Md BT', 'Futura Medium BT Alt';
 }
 
 #slideshow #slideshow-nav{
@@ -632,6 +633,7 @@ section{
 #slideshow.slideshow-2 .description .big{
 	font-size: 32px;
 	margin-bottom: 20px;
+	font-family: 'Futura Md BT', 'Futura Medium BT Alt';
 }
 
 #slideshow.slideshow-2 .description .btn-2{
@@ -959,6 +961,7 @@ section{
 	line-height: 36px;
 	margin-bottom: 10px;
 	letter-spacing: 5px;
+	font-family: 'Futura Md BT', 'Futura Medium BT Alt';
 }
 
 #banner-page .description .btn,
