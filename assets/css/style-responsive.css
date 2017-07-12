@@ -235,11 +235,12 @@ Alias: pl4y312
 	}
 
 	#banner-page{
-		height: 670px;
+		height: 270px;
 	}
 
 	#banner-page img{
-		height: 670px;
+		height: 270px;
+		width: auto;
 		position: absolute;
 		top: -9999px;
 		bottom: -9999px;
@@ -252,7 +253,7 @@ Alias: pl4y312
 		padding-left: 10px;
 		padding-right: 10px;
 		top: auto;
-		bottom: 200px;
+		bottom: 40px;
 	}
 
 	#banner-page .description .big{
@@ -316,7 +317,7 @@ Alias: pl4y312
 
 	#container{
 		padding-bottom: 30px;
-		padding-top: 109px;
+		padding-top: 189px;
 	}
 
 	#content-page{
