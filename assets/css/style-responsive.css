@@ -322,7 +322,6 @@ Alias: pl4y312
 	}
 
 	#container{
-		padding-bottom: 30px;
 		padding-top: 114px;
 	}
 
@@ -358,16 +357,16 @@ Alias: pl4y312
 	}
 
 	.inner #newsletter{
-		background: #f1f2f2;
 		height: auto;
+		font-size: 15px !important;
+		font-weight: bold;
+		color: #666;
+		margin-bottom: 0px;
 	}
 
 	.inner #newsletter .wrap{
-		background: #fff;
-		line-height: 30px;
-		color: #414042;
+		line-height: 20px;
 		text-align: center;
-		padding: 30px 20px;
 	}
 
 	.frontend .list-style-1 li{
@@ -384,10 +383,12 @@ Alias: pl4y312
 	}
 
 	#newsletter input{
-		margin-top: 25px !important;
-		height: 60px;
+		margin-top: 15px !important;
+		height: 30px;
+		width: 100% !important;
 		background: #f1f2f2;
-		font-size: 24px !important;
+		font-size: 15px !important;
+		font-weight: normal;
 	}
 
 	#footer{
