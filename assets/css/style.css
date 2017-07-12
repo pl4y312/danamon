@@ -436,6 +436,17 @@ section{
 	display: none;
 }
 
+#sbdk{
+	font-size: 16px;
+	right: 60px;
+	position: absolute;
+	top: 12px;
+}
+
+#sbdk a{
+	color: #666;
+}
+
 #language{
 	line-height: 21px;
 	font-size: 9px;

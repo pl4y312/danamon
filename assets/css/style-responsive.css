@@ -66,16 +66,17 @@ Alias: pl4y312
 	}
 
 	#header{
-		padding: 50px 10px 20px 10px;
+		padding: 15px 10px 10px 10px;
 	}
 
 	#header #icon-menu-responsive{
 		background: url(../img/icon-40x44-menu-responsive.png) top center no-repeat;
+		background-size: 20px 42px;
 		position: fixed;
-		top: 50px;
+		top: 30px;
 		right: 10px;
-		width: 40px;
-		height: 44px;
+		width: 20px;
+		height: 21px;
 		cursor: pointer;
 	}
 
@@ -132,7 +133,7 @@ Alias: pl4y312
 	}
 
 	#language{
-		right: 30px;
+		right: 10px;
 	}
 
 	#featured-menu-wrap{
@@ -220,17 +221,22 @@ Alias: pl4y312
 
 	#header #search-form input{
 		width: 100%;
-		line-height: 60px;
-		height: 60px;
-		background-size: 32px 30px;
-		background-position: right 20px center;
+		line-height: 30px;
+		height: 30px;
+		background-size: 16px 15px;
+		background-position: right 10px center;
 		border:1px solid #e6e6e6;
 		font-size: 24px;
 	}
 
+	#sbdk{
+		top: 9px;
+		right: 90px;
+	}
+
 	#language{
-		right: 50px;
-		font-size: 20px;
+		right: 30px;
+		font-size: 12px;
 		top: 10px;
 	}
 
@@ -317,7 +323,7 @@ Alias: pl4y312
 
 	#container{
 		padding-bottom: 30px;
-		padding-top: 189px;
+		padding-top: 114px;
 	}
 
 	#content-page{
@@ -462,8 +468,12 @@ Alias: pl4y312
 		width: 100%;
 	}
 
+	#sbdk{
+		right: 100px;
+	}
+
 	#language{
-		right: 70px;
+		right: 40px;
 	}
 
 	#footer{
