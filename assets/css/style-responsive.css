@@ -157,12 +157,14 @@ Alias: pl4y312
 		left: 0;
 		width: 100%;
 		top: auto;
-		height: 80px;
+		height: auto;
 		padding-top: 0px;
+		background: none;
 	}
 
 	#sticky-menu ul > li{
 		width: 20%;
+		height: 60px;
 		float: left;
 		border-top: none;
 		border-left: 1px solid #fff;
@@ -175,8 +177,12 @@ Alias: pl4y312
 
 	#sticky-menu a.menu{
 		width: 100%;
-		height: 80px;
+		height: 60px;
+		line-height: 60px;
 		display: inline-block;
+		background-color: #f4f4f4;
+		border: 1px solid #ccc;
+		padding: 7px 0px;
 	}
 
 	#sticky-menu a.menu > div{
