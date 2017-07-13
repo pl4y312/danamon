@@ -340,14 +340,25 @@ Alias: pl4y312
 		height: 44px;
 	}
 
-	.inner .sharing-social{
+	.inner .sharing-social.bottom{
 		text-align: center !important;
-		margin-top: 40px;
-		margin-bottom: 0px;
+		margin-bottom: 40px;
+		font-size: 14px;
+	}
+
+	.sharing-social.bottom .images-screen-width{
+		overflow-x: scroll;
+		width: 100%;
+		margin-top: 25px;
+	}
+
+	.sharing-social.bottom .images-wrap{
+		width: auto;
+		white-space: nowrap;
 	}
 
 	.inner .sharing-social img{
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 
 	#newsletter,
