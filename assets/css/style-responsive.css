@@ -208,11 +208,20 @@ Alias: pl4y312
 /* Small Device | col-sm- */
 @media(max-width: 991px){
 	body.frontend{
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.frontend .wrap{
 		width: 750px;
+	}
+
+	iframe{
+		width: 100%;
+		height: auto;
+	}
+
+	.btn-sm-block{
+		width: 100% !important;
 	}
 
 	#header{
@@ -248,6 +257,7 @@ Alias: pl4y312
 
 	#banner-page{
 		height: 270px;
+		margin-bottom: 30px;
 	}
 
 	#banner-page img{
@@ -272,10 +282,6 @@ Alias: pl4y312
 		font-size: 26px;
 		line-height: 26px;
 		letter-spacing: 3px;
-	}
-
-	#content-wrapper{
-		padding-top: 30px;
 	}
 
 	#sidebar-wrapper{
@@ -332,9 +338,34 @@ Alias: pl4y312
 	}
 
 	#content-page{
-		font-size: 20px;
+		font-size: 15px;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+
+	#content-page p{
+		line-height: 24px;
+	}
+
+	#content-page .title{
+		margin-bottom: 20px;
+	}
+
+	#content-page ul{
+		list-style: none;
+		padding-left: 0;
+	}
+
+	#content-page li{
+		padding-left: 20px;
+		text-indent: -20px;
+		margin-bottom: 0px;
+	}
+
+	#content-page li::before{
+		content: "■";
+		margin-right: 10px;
+		color: #999;
 	}
 
 	#suitable-saving thead td,
