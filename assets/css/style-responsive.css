@@ -430,6 +430,20 @@ Alias: pl4y312
 		color: #414042;
 	}
 
+	#offer-form .text{
+		font-size: 20px;
+	}
+
+	#offer-form input,
+	#offer-form select{
+		height: 42px;
+		margin-bottom: 10px;
+	}
+
+	.frontend select{
+		background: url('../img/arrow-select-mobile.png') right 10px center no-repeat !important;
+	}
+
 	#newsletter input{
 		margin-top: 15px !important;
 		height: 30px;
@@ -437,6 +451,30 @@ Alias: pl4y312
 		background: #f1f2f2;
 		font-size: 15px !important;
 		font-weight: normal;
+	}
+
+	.pagination{
+		padding: 0px;
+	}
+
+	.pagination a{
+		display: none;
+	}
+
+	.pagination a.previous,
+	.pagination a.next{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		margin: 0 15px;
+		background-image: url('../img/arrow-pagination-mobile.png');
+		background-position: left center;
+		background-repeat: no-repeat;
+		border: 0px;
+	}
+
+	.pagination a.next{
+		background-position: right center;
 	}
 
 	#footer{
@@ -508,7 +546,6 @@ Alias: pl4y312
 		position: absolute;
 		right: 0px;
 	}
-
 }
 
 /* Extra Small Device | col-xs- */

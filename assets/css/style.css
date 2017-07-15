@@ -150,8 +150,8 @@ body.frontend{
 }
 
 .frontend .btn-2.orange{
-	color: #f15a22;
-	border-color: #f15a22;
+	color: #f15a22 !important;
+	border-color: #f15a22 !important;
 }
 
 .frontend .btn-2:hover{
@@ -160,8 +160,12 @@ body.frontend{
 }
 
 hr.bold{
-	border-width: 3px;
+	border-width: 5px;
 	border-color: #ccc;
+}
+
+hr.orange{
+	border-color: #EF581C;
 }
 
 .table-2{
@@ -918,6 +922,7 @@ section{
 .news-item img{
 	width: 100%;
 	height: auto;
+	margin-bottom: 0px !important;
 }
 
 .news-item .news-title{
@@ -1457,8 +1462,9 @@ section{
 
 #offer-form .text{
 	font-size: 28px;
-	color: #999;
+	color: #666;
 	margin: 10px 0 30px;
+	font-family: 'Futura Md BT', 'Futura Medium BT Alt';
 }
 
 #offer-form input,
