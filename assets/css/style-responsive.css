@@ -430,12 +430,34 @@ Alias: pl4y312
 		color: #414042;
 	}
 
-	#offer-form .text{
+	#offer-form .text,
+	#job-vacancies .title{
 		font-size: 20px;
+		letter-spacing: 2px;
 	}
 
-	#offer-form input,
-	#offer-form select{
+	#job-vacancies{
+		padding: 10px;
+	}
+
+	.accordion .item-title{
+		padding: 10px 20px;
+	}
+
+	.accordion .arrow{
+		top: 17px;
+		right: 20px;
+		background: url('../img/arrow-accordion-mobile.png') center bottom no-repeat;
+		width: 20px;
+		height: 11px;
+	}
+
+	.accordion .item-content{
+		padding: 15px 20px;	
+	}
+
+	.frontend input,
+	.frontend select{
 		height: 42px;
 		margin-bottom: 10px;
 	}
