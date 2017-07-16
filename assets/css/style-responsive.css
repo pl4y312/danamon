@@ -544,6 +544,10 @@ Alias: pl4y312
 		padding: 20px 0 0;
 	}
 
+	#annual-report .item{
+		margin-bottom: 10px;
+	}
+
 	#footer{
 		text-align: center;
 	}
