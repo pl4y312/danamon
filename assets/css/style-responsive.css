@@ -440,6 +440,14 @@ Alias: pl4y312
 		padding: 10px;
 	}
 
+	#job-vacancies .title{
+		margin-bottom: 20px;
+	}
+
+	#job-vacancies form{
+		margin-bottom: 15px;
+	}
+
 	.accordion .item-title{
 		padding: 10px 20px;
 	}
@@ -497,6 +505,24 @@ Alias: pl4y312
 
 	.pagination a.next{
 		background-position: right center;
+	}
+
+	.carousel .carousel-control .glyphicon{
+		margin-top: -20px;
+		width: 35px;
+		height: 35px;
+		background-image: url('../img/arrow-carousel-mobile.png');
+		background-position: center left;
+		background-repeat: no-repeat;
+	}
+
+	.carousel .carousel-control .glyphicon.previous{
+		margin-left: -23px;
+	}
+
+	.carousel .carousel-control .glyphicon.next{
+		margin-right: -22px;
+		background-position: center right;
 	}
 
 	#footer{
