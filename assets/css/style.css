@@ -160,12 +160,8 @@ body.frontend{
 }
 
 hr.bold{
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #ccc;
-}
-
-hr.orange{
-	border-color: #EF581C;
 }
 
 .table-2{

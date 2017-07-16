@@ -368,6 +368,11 @@ Alias: pl4y312
 		color: #999;
 	}
 
+	#content-page hr.bold{
+		border-width: 5px;
+		border-color: #EF581C;
+	}
+
 	#suitable-saving thead td,
 	#suitable-saving tbody td{
 		font-size: 20px;
