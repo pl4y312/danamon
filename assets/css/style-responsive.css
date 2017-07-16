@@ -453,7 +453,9 @@ Alias: pl4y312
 		margin-bottom: 15px;
 	}
 
-	.accordion .item-title{
+	.accordion .item-title,
+	.accordion .item-title.big{
+		font-size: 15px;
 		padding: 10px 20px;
 	}
 
@@ -528,6 +530,18 @@ Alias: pl4y312
 	.carousel .carousel-control .glyphicon.next{
 		margin-right: -22px;
 		background-position: center right;
+	}
+
+	.profile-page .thumbnail,
+	.profile-page .thumbnail img{
+		width: 100%;
+		height: auto;
+	}
+
+	.profile-page .description{
+		position: relative;
+		width: 100%;
+		padding: 20px 0 0;
 	}
 
 	#footer{
