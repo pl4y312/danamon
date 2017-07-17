@@ -555,6 +555,16 @@ Alias: pl4y312
 		padding: 20px 0 0;
 	}
 
+	.list-profile .profile{
+		padding-bottom: 0px;
+		margin-bottom: 10px;
+	}
+
+	.list-profile .thumbnail,
+	.list-profile .thumbnail img{
+		margin-bottom: 0px !important;
+	}
+
 	#annual-report .item{
 		margin-bottom: 10px;
 	}
