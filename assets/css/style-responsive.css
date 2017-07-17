@@ -555,6 +555,14 @@ Alias: pl4y312
 		padding: 20px 0 0;
 	}
 
+	.list-sm-single .col-md-4{
+		display: none;
+	}
+
+	.list-sm-single .col-md-4:first-child{
+		display: block;
+	}
+
 	.list-profile .profile{
 		padding-bottom: 0px;
 		margin-bottom: 10px;
