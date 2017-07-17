@@ -475,10 +475,16 @@ Alias: pl4y312
 	.frontend select{
 		height: 42px;
 		margin-bottom: 10px;
+		margin-top: 10px;
 	}
 
 	.frontend select{
 		background: url('../img/arrow-select-mobile.png') right 10px center no-repeat !important;
+	}
+
+	.frontend .bg-grey input[type="text"],
+	.frontend .bg-grey select{
+		background-color: #fff !important;
 	}
 
 	#newsletter input{
