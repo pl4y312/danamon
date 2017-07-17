@@ -1388,6 +1388,7 @@ section{
 }
 
 .panel-1 input{
+	margin-top: 10px;
 	width: 100%;
 }
 
@@ -1991,6 +1992,39 @@ section{
 	line-height: 15px;
 	padding: 15px 0;
 	height: auto;
+}
+
+.simulation-result .title{
+	margin-bottom: 0px;
+}
+
+.simulation-result .subtitle{
+	font-size: 15px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.simulation-result .label{
+	color: #666;
+	font-size: 15px;
+	text-align: right;
+	white-space: normal;
+	font-weight: normal;
+	vertical-align: bottom;
+}
+
+.simulation-result .value{
+	color: #666;
+	font-size: 15px;
+	white-space: normal;
+	vertical-align: bottom;
+}
+
+.simulation-result .btn-2{
+	font-size: 16px;
+	padding: 10px 0;
+	line-height: 24px;
+	border-width: 1px;
 }
 
 
