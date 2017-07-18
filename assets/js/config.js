@@ -370,6 +370,14 @@ $(document).ready(function(){
 			}
 			currentPosition = $(this).scrollTop()
 		})
+
+		$('.list-style-2 .description').css('width', function(){
+			return $(window).width() - $(this).siblings('.marker').width() - 40;
+		})
+
+		$('.list-style-3 .description').css('width', function(){
+			return $(window).width() - $(this).siblings('.thumbnail').width() - 20;
+		})
 	}
 
 });
