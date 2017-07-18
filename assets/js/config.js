@@ -180,10 +180,16 @@ $(document).ready(function(){
 	 *
 	 */
 	$(window).scroll(function() {
+		console.log($(window).width())
 		if ($(this).scrollTop() >= 50) {
-			$('#gototop')
-				.fadeIn(500)
-				.css('left', $('#container .wrap').offset().left + $('#container .wrap').width() - 61);    // Fade in the arrow
+			$('#gototop').fadeIn(500);
+			if($(window).width() > 992){
+				$('#gototop').css('left', function(){
+					return $('#container .wrap').offset().left + $('#container .wrap').width() - 61;
+				}); // Fade in the arrow
+			} else {
+				$('#gototop').css('right', 0);
+			}
 		} else {
 			$('#gototop').fadeOut(500);
 		}

@@ -149,7 +149,7 @@ Alias: pl4y312
 	}
 
 	#gototop{
-		bottom: 80px;
+		bottom: 60px;
 	}
 
 	#sticky-menu{
@@ -349,7 +349,7 @@ Alias: pl4y312
 		padding-top: 114px;
 	}
 
-	#content-wrapper .row{
+	#content-wrapper > .row{
 		padding: 0 10px !important;
 	}
 
@@ -597,6 +597,14 @@ Alias: pl4y312
 
 	.list-style-2 .description .title{
 		font-size: 15px !important;
+	}
+
+	#content-page .list-style-2 li{
+		text-indent: 0px;
+	}
+
+	#content-page .list-style-2 li::before{
+		display: none !important;
 	}
 
 	.list-style-3{
