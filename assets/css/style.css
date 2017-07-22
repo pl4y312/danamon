@@ -1851,6 +1851,7 @@ section{
 	text-align: center;
 	width: 120px;
 	position: relative;
+	vertical-align: top;
 }
 
 .step-carousel li .number{
@@ -1873,9 +1874,10 @@ section{
 
 .step-carousel li .title{
 	color: #666;
-	font-size: 12px;
+	font-size: 12px !important;
 	letter-spacing: 1px;
 	margin-bottom: 0px;
+	height: 40px;
 }
 
 .step-carousel li:before{

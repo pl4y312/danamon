@@ -346,7 +346,7 @@ Alias: pl4y312
 	}
 
 	#container{
-		padding-top: 114px;
+		padding-top: 85px;
 	}
 
 	#content-wrapper > .row{
@@ -500,6 +500,11 @@ Alias: pl4y312
 		background: url('../img/arrow-select-mobile.png') right 10px center no-repeat !important;
 	}
 
+	.frontend input[type="radio"],
+	.frontend input[type="checkbox"]{
+		margin-top: 5px;
+	}
+
 	.frontend .bg-grey input[type="text"],
 	.frontend .bg-grey select{
 		background-color: #fff !important;
@@ -642,6 +647,19 @@ Alias: pl4y312
 		padding-right: 25px;
 	}
 
+	#full-form .form-body{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	#full-form .step-carousel .title{
+		font-size: 12px;
+	}
+
+	#full-form .btn.prev-link{
+		margin-bottom: 15px;
+	}
+
 	#footer{
 		text-align: center;
 	}
@@ -730,5 +748,17 @@ Alias: pl4y312
 	#footer{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+}
+
+/* Extra Extra Small | Additional Needs */
+@media(max-width: 400px){
+	.step-carousel li{
+		width: 90px;
+	}
+
+	.step-carousel li:before{
+		width: 48px;
+		margin-left: 68px;
 	}
 }
