@@ -748,6 +748,64 @@ Alias: pl4y312
 		width: 100%;
 	}
 
+	#solusi .title.text-center,
+	#inspirasi .title.text-center,
+	#kemudahan .title.text-center{
+		padding: 0 50px;
+	}
+
+	#solusi .item{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#solusi .item .text{
+		white-space: normal;
+	}
+
+	#inspirasi .inspirasi-item{
+		width: 100%;
+	}
+
+	#kemudahan .item{
+		margin-top: 10px;
+	}
+
+	#kemudahan .item .title{
+		background-color: #BDBEC0;
+		font-size: 16px !important;
+		padding: 10px 20px;
+		margin-bottom: 0px;
+	}
+
+	#kemudahan .content{
+		background-color: #DDD !important;
+		padding: 10px 20px !important;
+		display: none;
+	}
+
+	#testimonial{
+		padding: 50px 10px;
+	}
+
+	#testimonial .content{
+		background-color: #D1D2D4;
+		font-size: 20px;
+		padding-top: 20px;
+	}
+
+	#testimonial .author{
+		background-color: #E7E8EA;
+	}
+
+	.testimoni .name{
+		font-size: 15px;
+	}
+
+	.testimoni .name strong{
+		font-size: 17px;
+	}
+
 	#footer{
 		text-align: center;
 	}
