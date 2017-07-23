@@ -391,6 +391,10 @@ Alias: pl4y312
 		line-height: 28px;
 	}
 
+	#featured-menu-2 .title{
+		font-size: 12px !important;
+	}
+
 	#suitable-saving thead td,
 	#suitable-saving tbody td{
 		font-size: 20px;
@@ -660,6 +664,90 @@ Alias: pl4y312
 		margin-bottom: 15px;
 	}
 
+	.frontend .news-featured{
+		background-color: #DBDCDE !important;
+		height: 105px;
+	}
+
+	.frontend .news-featured .news-thumbnail{
+		width: 35%;
+		height: 105px;
+		overflow: hidden;
+		position: relative;
+		float: left;
+	}
+
+	.frontend .news-featured .news-thumbnail img{
+		height: 105px;
+		width: auto;
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		margin: auto;
+	}
+
+	.frontend .news-featured .news-title{
+		width: 65%;
+		float: left;
+		margin: 0px;
+		padding: 10px;
+	}
+
+	.frontend .news-featured .news-link{
+		margin: 0px;
+		padding-left: 15px;
+	}
+
+	.frontend .banner-wide{
+		position: relative;
+		border-top: 7px solid #F05A1E;
+		overflow: hidden;
+	}
+
+	.frontend .banner-wide img{
+		position: absolute;
+		right: -9999px;
+		left: -9999px;
+		height: 250px;
+		width: auto;
+		margin: auto;
+		margin-bottom: 0px;
+	}
+
+	.frontend .banner-wide .description{
+		padding: 0 10px;
+	}
+
+	.frontend .banner-wide .description span{
+		font-size: 20px !important;
+		letter-spacing: 2px;
+		line-height: 28px;
+	}
+
+	.frontend .banner-wide .description .btn{
+		width: 100%;
+		font-size: 16px;
+		letter-spacing: 2px;
+		margin-top: 20px;
+	}
+
+	.frontend #slideshow.slideshow-2 .description{
+		left: 10px !important;
+	}
+
+	.frontend #slideshow.slideshow-2 .description .big{
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+
+	.frontend #slideshow.slideshow-2 .description span{
+		font-size: 13px;
+	}
+
+	.frontend #slideshow.slideshow-2 .description .btn{
+		width: 100%;
+	}
+
 	#footer{
 		text-align: center;
 	}
@@ -745,6 +833,39 @@ Alias: pl4y312
 		right: 40px;
 	}
 
+	#featured-menu-2 .item{
+		width: auto;
+		height: 140px;
+		background-color: #fff !important;
+		float: left;
+		padding: 15px 0px 0px !important;
+		vertical-align: top
+	}
+
+	#featured-menu-2 .item img{
+		height: 50px;
+		width: auto;
+	}
+
+	#featured-menu-2 .title{
+		padding: 10px;
+		margin: 0px;
+		white-space: normal;
+	}
+
+
+	.scroll-width{
+		width: 100%;
+		overflow-x: scroll;
+		padding: 0px 10px !important;
+	}
+
+	.scroll-wrap{
+		width: auto;
+		white-space: nowrap;
+		padding: 0px !important;
+	}
+
 	#footer{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -752,7 +873,7 @@ Alias: pl4y312
 }
 
 /* Extra Extra Small | Additional Needs */
-@media(max-width: 400px){
+@media(max-width: 480px){
 	.step-carousel li{
 		width: 90px;
 	}

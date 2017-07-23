@@ -377,6 +377,24 @@ $(window).on('load', function(){
 		})
 	}
 
+	/**
+	 *
+	 * Column Scroll Width
+	 *
+	 */
+	var gridScreenWidth = $(window).width() / 12;
+	if( $(window).width() < 768 ) {
+		for(i = 1; i <= 12; i++){
+			$(".sc-col-sm-" + i).width(gridScreenWidth * i);
+		}
+
+		$(".scroll-wrap").width(function(){
+			return $(this).find('.item').length * $(this).find('.item').width();
+		});
+
+		$("#slideshow .description").width($(window).width() - 20);
+	}
+
 });
 
 
