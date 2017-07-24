@@ -1244,6 +1244,21 @@ section{
 	position: relative;
 }
 
+.inspirasi-item .avatar{
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	height: 470px;
+}
+
+.inspirasi-item .avatar img{
+	width: auto;
+	position: absolute;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+}
+
 .inspirasi-item .description{
 	position: absolute;
 	bottom: 0px;
@@ -1269,6 +1284,10 @@ section{
 
 .inspirasi-item .news-link:hover{
 	color: #ff6a08;
+}
+
+.carousel .inspirasi-item{
+	width: 100%;
 }
 
 #kemudahan{
