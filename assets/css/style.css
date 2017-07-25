@@ -2013,6 +2013,17 @@ section{
 	border-width: 1px;
 }
 
+.accordion.annual-report .annual-report-image{
+	float: left;
+	width: 30%;
+}
+
+.accordion.annual-report .annual-report-description{
+	float: left;
+	width: 70%;
+	padding-left: 20px;
+}
+
 
 /* Footer */
 #footer{

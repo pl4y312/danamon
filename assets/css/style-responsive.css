@@ -484,9 +484,8 @@ Alias: pl4y312
 	.accordion .arrow{
 		top: 17px;
 		right: 20px;
-		background: url('../img/arrow-accordion-mobile.png') center bottom no-repeat;
-		width: 20px;
-		height: 11px;
+		width: 12px;
+		height: 7px;
 	}
 
 	.accordion .item-content{
@@ -800,6 +799,11 @@ Alias: pl4y312
 
 	.testimoni .name strong{
 		font-size: 17px;
+	}
+
+	.accordion.annual-report .annual-report-description{
+		width: 100%;
+		padding-left: 0px;
 	}
 
 	#footer{
