@@ -489,7 +489,7 @@ section{
 }
 
 #sidebar-right .item.border-top{
-	border-top: 5px solid #c1c1c1;
+	border-top: 5px solid #EA3000;
 }
 
 #sidebar-right img{
@@ -511,7 +511,7 @@ section{
 }
 
 #sidebar-right .post-title{
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 16px;
 	margin-bottom: 5px;
 	font-weight: bold;
@@ -2090,7 +2090,7 @@ section{
 	padding-left: 20px;
 }
 
-.search-result{
+.search-result #content-wrapper{
 	padding: 20px 0;
 }
 
@@ -2104,7 +2104,7 @@ section{
 
 .search-result .search-form .input-area{
 	padding: 15px;
-	background-color: #c1c1c1;
+	background-color: #F7C101;
 	margin-bottom: 30px;
 }
 
@@ -2126,7 +2126,7 @@ section{
 	background-size: 18px 16px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: #333;
+	background-color: #EA3000;
 }
 
 .search-result .item{
@@ -2135,6 +2135,7 @@ section{
 }
 
 .search-result .title{
+	font-size: 18px !important;
 	line-height: 20px;
 	margin-bottom: 5px;
 }
@@ -2147,8 +2148,12 @@ section{
 	color: #f15a22;
 }
 
+.search-result .url{
+	font-size: 10px;
+}
+
 .search-result .teaser{
-	font-size: 14px;
+	font-size: 12px;
 	margin-bottom: 5px;
 }
 
