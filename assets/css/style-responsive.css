@@ -856,6 +856,10 @@ Alias: pl4y312
 		background-image: url('../img/arrow-accordion-white.png');
 	}
 
+	.search-result #banner-page{
+		margin-bottom: 10px;
+	}
+
 	#footer{
 		text-align: center;
 	}
