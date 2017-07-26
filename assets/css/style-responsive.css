@@ -851,6 +851,15 @@ Alias: pl4y312
 		text-align: center;
 	}
 
+	.contact-page-2 .accordion .item-title{
+		color: #fff;
+		background-color: #f89422;
+	}
+
+	.contact-page-2 .accordion .arrow{
+		background-image: url('../img/arrow-accordion-white.png');
+	}
+
 	#footer{
 		text-align: center;
 	}

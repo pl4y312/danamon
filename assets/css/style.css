@@ -1920,6 +1920,10 @@ section{
 	padding: 15px;
 }
 
+.contact-page .title{
+	color: #666;
+}
+
 .contact-page .item{
 	margin-bottom: 30px;
 }
@@ -1984,6 +1988,12 @@ section{
 	line-height: 15px;
 	padding: 15px 0;
 	height: auto;
+}
+
+.contact-page-2 input[type="submit"]{
+	width: 100%;
+	color: #fff;
+	background-color: #f15a22;
 }
 
 .simulation-result .title{
