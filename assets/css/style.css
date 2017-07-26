@@ -1946,6 +1946,12 @@ section{
 	width: 230px;
 }
 
+.contact-address .map{
+	width: 610px;
+	height: 260px;
+	border: 0px;
+}
+
 .contact-form{
 	padding: 50px 0;
 }

@@ -387,12 +387,23 @@ $(window).on('load', function(){
 		for(i = 1; i <= 12; i++){
 			$(".sc-col-sm-" + i).width(gridScreenWidth * i);
 		}
+	}
 
+	/**
+	 *
+	 * Additional Config on Extra Small Screen
+	 *
+	 */
+	if( $(window).width() < 768 ) {
 		$(".scroll-wrap").width(function(){
 			return $(this).find('.item').length * $(this).find('.item').width();
 		});
 
 		$("#slideshow .description").width($(window).width() - 20);
+
+		$(".contact-address .address").width(function(){
+			return $(this).closest('.clearfix').width() - $(this).siblings('.icon').width()
+		})
 	}
 
 });
