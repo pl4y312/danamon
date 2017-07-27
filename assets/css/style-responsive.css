@@ -857,7 +857,11 @@ Alias: pl4y312
 	}
 
 	.search-result #banner-page{
-		margin-bottom: 10px;
+		margin-bottom: 0px;
+	}
+
+	.search-result #content-wrapper{
+		padding-top: 10px;
 	}
 
 	#footer{

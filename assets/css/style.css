@@ -442,7 +442,7 @@ section{
 	position: relative;
 }
 
-#sidebar li .arrow-submenu{
+#sidebar li > .arrow-submenu{
 	position: absolute;
 	right: 0px;
 	top: 22px;
@@ -453,7 +453,7 @@ section{
 	background-repeat: no-repeat;
 }
 
-#sidebar li.active .arrow-submenu{
+#sidebar li.active > .arrow-submenu{
 	background-position: right bottom;
 }
 

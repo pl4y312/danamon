@@ -143,7 +143,7 @@ $(window).on('load', function(){
 	 *
 	 */
 	$("#sidebar li.active").children("ul").show();
-	$("#sidebar > ul > li").has("ul").append('<div class="arrow-submenu"></div>');
+	$("#sidebar li").has("ul").append('<div class="arrow-submenu"></div>');
 	$('#sidebar a').on("click", function(e){
 		var _li = $(this).closest('li');
 		if(_li.has('ul').length){
