@@ -31,13 +31,24 @@ $(window).on('load', function(){
 		});
 
 		// Submenu
-		$('#header .menu .level-1 li').has('ul')
-			.append('<div class="arrow-submenu"></div>')
+		$('#header .menu li').has('ul').append('<div class="arrow-submenu"></div>')
+		$('#header .menu li a')
 			.click(function(e){
-				e.preventDefault();
-				$(this).toggleClass('open');
-				$(this).find('ul').slideToggle();
+				var _li = $(this).closest('li');
+				if(_li.has('ul').length){
+					e.preventDefault();
+					_li.siblings('.open')
+						.removeClass('open')
+						.find('ul').slideUp();
+					_li.toggleClass('open');
+					_li.find('ul').slideToggle();
+					_li.find('ul ul').hide();
+				}
 			});
+
+		$('#header ul').click(function(e){
+			console.log(e);
+		})
 	};
 	
 

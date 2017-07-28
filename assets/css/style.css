@@ -422,7 +422,7 @@ section{
 	width: 235px;
 }
 
-#header .menu .level-2 > ul > li .arrow-submenu{
+#header .menu .level-2 .arrow-submenu{
 	position: absolute;
 	left: 208px;
 	margin-top: -24px;

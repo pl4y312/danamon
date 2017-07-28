@@ -133,16 +133,30 @@ Alias: pl4y312
 		background: none;
 	}
 
+	#header .menu .level-2 > ul,
+	#header .menu .level-3 > ul{
+		display: none;
+	}
+
 	#header .menu .level-2 .title{
 		display: none;
 	}
 
-	#header .menu .level-2 > li{
-		padding-left: 20px;
+	#header .menu .level-2 > ul > li{
+		padding-left: 0px;
+		position: relative;
+		width: 100%;
 	}
 
-	#header .menu .level-2 > li > a{
-		padding: 0;
+	#header .menu .level-2 .arrow-submenu{
+		top: 12px;
+		margin-top: 0px;
+		left: auto;
+		right: 10px;
+	}
+
+	#header .menu .level-2 > ul > li > a{
+		padding: 7px 0;
 		display: block;
 	}
 
@@ -151,7 +165,30 @@ Alias: pl4y312
 	}
 
 	#header .menu li:first-child .level-3{
+		/*display: none;*/
+	}
+
+	#header .menu .level-3{
+		position: relative;
+		width: 100%;
+		left: 0px;
+		background: none;
+	}
+
+	#header .menu .level-3 ul{
+		float: none;
+	}
+
+	#header .menu .level-3 li{
+		width: 100%;
+	}
+
+	#header .menu .level-3 img{
 		display: none;
+	}
+
+	#header .menu a{
+		background: none !important;
 	}
 
 	#language{
