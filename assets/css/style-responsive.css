@@ -103,16 +103,21 @@ Alias: pl4y312
 
 	#header .menu > ul > li > a{
 		display: block;
-		padding: 20px 0;
+		padding: 10px 0;
+	}
+
+	#header .menu > ul > li > a:hover{
+		border: none;
 	}
 
 	#header .menu .arrow-submenu{
 		position: absolute;
 		right: 0px;
-		width: 17px;
-		height: 17px;
+		width: 12px;
+		height: 12px;
 		background: url('../img/arrow-submenu.png') top center no-repeat;
-		top: 20px;
+		top: 15px;
+		background-size: 12px 24px;
 	}
 
 	#header .menu li.open .arrow-submenu{
@@ -121,6 +126,15 @@ Alias: pl4y312
 
 	#header .menu .level-2{
 		padding-left: 20px;
+		top: 0px;
+		overflow: scroll;
+		border: none;
+		position: relative;
+		background: none;
+	}
+
+	#header .menu .level-2 .title{
+		display: none;
 	}
 
 	#header .menu .level-2 > li{
@@ -128,8 +142,16 @@ Alias: pl4y312
 	}
 
 	#header .menu .level-2 > li > a{
-		padding: 20px 0;
+		padding: 0;
 		display: block;
+	}
+
+	#header .menu .level-2 > ul > li:first-child a{
+		background: none;
+	}
+
+	#header .menu li:first-child .level-3{
+		display: none;
 	}
 
 	#language{

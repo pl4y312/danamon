@@ -337,6 +337,10 @@ section{
 	width: 100%;
 }
 
+#header .wrap{
+	overflow: visible !important;
+}
+
 #header .wrap > div{
 	vertical-align: bottom !important;
 	display: inline-block !important;
@@ -365,6 +369,7 @@ section{
 
 #header .menu{
 	font-size: 16px;
+	/*position: relative;*/
 }
 
 #header .menu ul{
@@ -373,19 +378,105 @@ section{
 
 #header .menu > ul > li{
 	display: inline-block;
-	margin: 0 14px;
 }
 
 #header .menu > ul > li > a{
 	color: #414042;
+	padding: 0 14px 18px 14px;
 }
 
 #header .menu > ul > li > a:hover{
 	color: #f15a22;
+	border-bottom: 4px solid #f7931d;
 }
 
-#header .menu ul.level-2{
+#header .menu .level-2{
 	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	background: #fff;
+	top: 54px;
+	left: 0px;
+	border-top: 1px solid #f7931d;
+}
+
+#header .menu li:hover .level-2{
+	display: block;
+}
+
+#header .menu .level-2 > .title{
+	padding: 15px 25px;
+	font-size: 15px;
+	letter-spacing: 0px;
+	margin: 0px;
+}
+
+#header .menu .level-2 > ul{
+	padding-bottom: 20px;
+	position: relative;
+}
+
+#header .menu .level-2 > ul > li{
+	width: 235px;
+}
+
+#header .menu .level-2 > ul > li .arrow-submenu{
+	position: absolute;
+	left: 208px;
+	margin-top: -24px;
+	width: 12px;
+	height: 12px;
+	background-image: url('../img/arrow-submenu.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 12px 24px;
+}
+
+#header .menu .level-2 a{
+	padding: 7px 0 7px 25px;
+	color: #333;
+	display: block;
+}
+
+#header .menu .level-2 > ul > li:first-child a,
+#header .menu .level-2 > ul > li.active a,
+#header .menu .level-2 > ul > li:hover a,
+#header .menu .level-2 > ul > li > a:hover{
+	background: #e6e6e6;
+}
+
+#header .menu .level-3{
+	display: none;
+	position: absolute;
+	background-color: #e6e6e6;
+	left: 235px;
+	width: 705px;
+	height: 100%;
+	top: 0px;
+}
+
+#header .menu li:first-child > .level-3,
+#header .menu li.active > .level-3,
+#header .menu li:hover > .level-3{
+	display: block;
+}
+
+#header .menu .level-3 ul{
+	float: left;
+}
+
+#header .menu .level-3 li{
+	width: 220px;
+}
+
+#header .menu .level-3 img{
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	width: 200px;
+	height: 180px;
 }
 
 #sbdk{

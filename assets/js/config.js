@@ -2,6 +2,15 @@ $(window).on('load', function(){
 
 	/**
 	 *
+	 * Header Mega Menu
+	 *
+	 */
+	if( $(window).width() > 1200){
+		$("#header .menu .level-2 > ul > li").has('.level-3').append('<div class="arrow-submenu"></div>');
+	}
+
+	/**
+	 *
 	 * Mobile Toggle Menu
 	 *
 	 */
