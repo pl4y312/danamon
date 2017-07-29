@@ -227,15 +227,24 @@ $(window).on('load', function(){
 	 */
 	if( $(window).width() >= 1200){
 		$('#sticky-menu a').click(function(){
-			$('#sticky-menu').addClass('open');
-			$('#sticky-menu').animate({right: "320px"}, 500);
-			$('#sticky-menu a').removeClass('current').siblings('.content').hide();
-			$(this).addClass('current').siblings('.content').show();
+			var thisContent = $(this).siblings('.content');
+			var otherOpenedContent = $(this).closest('#sticky-menu').find('.current').removeClass('current').siblings('.content');
+
+			$(this).addClass('current');
+			otherOpenedContent.hide();
+			thisContent.show();
+
+			if(!$('#sticky-menu').hasClass('open')){
+				$('#sticky-menu').addClass('open');
+				thisContent.animate({right: $('#sticky-menu').width()}, 500);
+			} else {
+				thisContent.css({right: $('#sticky-menu').width()})
+			}
 		});
 
 		$('#sticky-menu .glyphicon-remove').click(function(){
 			$('#sticky-menu').removeClass('open').removeClass('auto-hide');
-			$('#sticky-menu').animate({right: "0"}, 500);
+			$('#sticky-menu .current').siblings('.content').animate({right: -320}, 500);
 			$('#sticky-menu a').removeClass('current');
 		});
 	} else {
@@ -297,7 +306,7 @@ $(window).on('load', function(){
 	})
 	function timerIncrement() {
 		idleTime++;
-		if(idleTime >= 5 && !$('#sticky-menu').hasClass('open')){ // idle time 5 seconds
+		if(idleTime >= 500 && !$('#sticky-menu').hasClass('open')){ // idle time 5 seconds
 			if( $(window).width() >= 1200 ){
 				$('#sticky-menu').addClass('auto-hide');
 				$('#sticky-menu').animate({right: -$('#sticky-menu').width()}, 500);

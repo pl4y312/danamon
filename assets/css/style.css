@@ -2388,6 +2388,7 @@ section{
 	font-size: 8px;
 	cursor: pointer;
 	width: 100%;
+	background-color: #f4f4f4;
 }
 
 #sticky-menu a.menu:hover,
@@ -2397,10 +2398,12 @@ section{
 }
 
 #sticky-menu .content{
+	z-index: -1;
 	width: 320px;
 	background: #f7931d;
 	color: #fff;
 	position: absolute;
+	/*right: 70px;*/
 	right: -320px;
 	height: 100%;
 	top: 0;
@@ -2420,4 +2423,8 @@ section{
 	top: 120px;
 	z-index: 999;
 	cursor: pointer;
+}
+
+#sticky-menu.open .glyphicon-remove{
+	right: 90px;
 }
