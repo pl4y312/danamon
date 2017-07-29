@@ -260,7 +260,7 @@ Alias: pl4y312
 	}
 
 	#sticky-menu .glyphicon-remove{
-		right: 30px;
+		right: 20px !important;
 	}
 }
 
