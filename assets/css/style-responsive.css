@@ -499,6 +499,22 @@ Alias: pl4y312
 		text-align: center;
 	}
 
+	.inner #newsletter input[type="text"]{
+		width: 70%;
+	}
+
+	.inner #newsletter input[type="submit"]{
+		width: 30%;
+	}
+
+	#newsletter input{
+		margin-top: 15px !important;
+		height: 30px;
+		background: #f1f2f2;
+		font-size: 15px !important;
+		font-weight: normal;
+	}
+
 	.frontend .list-style-1 li{
 		margin: 10px 0;
 		padding: 10px 0 20px 0;
@@ -566,15 +582,6 @@ Alias: pl4y312
 	.frontend .bg-grey input[type="text"],
 	.frontend .bg-grey select{
 		background-color: #fff !important;
-	}
-
-	#newsletter input{
-		margin-top: 15px !important;
-		height: 30px;
-		width: 100% !important;
-		background: #f1f2f2;
-		font-size: 15px !important;
-		font-weight: normal;
 	}
 
 	.simulation-result .title{
