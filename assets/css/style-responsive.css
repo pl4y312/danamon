@@ -613,6 +613,10 @@ Alias: pl4y312
 		background-position: right center;
 	}
 
+	.carousel .carousel-control{
+		opacity: 1;
+	}
+
 	.carousel .carousel-control .glyphicon{
 		margin-top: -20px;
 		width: 35px;

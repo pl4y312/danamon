@@ -396,6 +396,17 @@ $(window).on('load', function() {
 		}, 500);
 	})
 
+	/**
+	 *
+	 * Carousel Caption Outside of Carousel
+	 *
+	 */
+	$("#carousel").on('slide.bs.carousel', function(evt) {
+	   var step = $(evt.relatedTarget).index();
+	   $('#carousel-captions .carousel-caption').hide();
+	   $('#carousel-captions #caption-' + step).fadeIn();
+	});
+
 
 	/**
 	 *

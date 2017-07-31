@@ -1940,7 +1940,7 @@ section{
 	margin-bottom: 0px !important;
 }
 
-.carousel .carousel-control{
+.carousel:hover .carousel-control{
 	opacity: 1;
 }
 
@@ -1959,6 +1959,20 @@ section{
 
 .carousel .carousel-control .glyphicon:before{
 	content: '';
+}
+
+#carousel-captions .carousel-caption{
+	position: relative;
+	text-align: center;
+	text-shadow: none;
+	color: #333;
+	font-size: 14px;
+	left: 0px;
+	padding: 30px;
+}
+
+#carousel-captions .carousel-caption:not(#caption-0){
+	display: none;
 }
 
 .step-carousel{
