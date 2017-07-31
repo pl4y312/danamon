@@ -353,9 +353,16 @@ section{
 #header #logo img{
 }
 
+#header #search-form{
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
+
 #header #search-form input{
 	border: 1px solid #e6e6e6;
-	/*height: 24px;*/
+	height: 24px;
+	width: 150px;
 	background-image: url('../img/icon-search.png');
 	background-position: right 5px center;
 	background-repeat: no-repeat;
