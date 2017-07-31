@@ -1,11 +1,13 @@
-$(window).on('load', function(){
+var executed = 0;
+
+$(window).on('load', function() {
 
 	/**
 	 *
 	 * Header Mega Menu
 	 *
 	 */
-	if( $(window).width() > 1200){
+	if ($(window).width() > 1200) {
 		$("#header .menu .level-2 > ul > li").has('.level-3').append('<div class="arrow-submenu"></div>');
 	}
 
@@ -14,7 +16,7 @@ $(window).on('load', function(){
 	 * Mobile Toggle Menu
 	 *
 	 */
-	if( $(window).width() < 1200){
+	if ($(window).width() < 1200) {
 		var menuWidth = $(this).width();
 		$('#header .menu .level-1').css({'right': -menuWidth});
 		$('#icon-menu-responsive').click(function(){
@@ -57,43 +59,46 @@ $(window).on('load', function(){
 	 * Slideshow
 	 *
 	 */
-	$('#slideshow .item').css('display', 'none');
-	$('#slideshow .item').first().fadeIn().addClass('active');
-	var slideInt = setInterval( "slideshow()", 3000);
+	if (!executed) {
+		$('#slideshow .item').css('display', 'none');
+		$('#slideshow .item').first().fadeIn().addClass('active');
+		var slideInt = setInterval( "slideshow()", 3000);
 
-	$('#slideshow-nav').append(function(){
-		var nav = '<ul>';
+		$('#slideshow-nav').append(function(){
+			var nav = '<ul>';
 
-		for(i=0; i < $('#slideshow .item').length; i++){
-			nav += '<li data-id="' + i + '"></li>';
-		}
-		nav += '</ul>';
+			for(i=0; i < $('#slideshow .item').length; i++){
+				nav += '<li data-id="' + i + '"></li>';
+			}
+			nav += '</ul>';
 
-		return nav;
-	}).css("margin-left", function(){
-		return -$(this).width()/2;
-	});
+			return nav;
+		}).css("margin-left", function(){
+			return -$(this).width()/2;
+		});
 
-	$('#slideshow-nav li').first().addClass('active');
+		$('#slideshow-nav li').first().addClass('active');
 
-	$('#slideshow-nav li').on('click', function(){
-		clearInterval(slideInt);
+		$('#slideshow-nav li').on('click', function(){
+			clearInterval(slideInt);
 
-		$('#slideshow-nav li.active').removeClass('active');
-		$(this).addClass('active');
+			$('#slideshow-nav li.active').removeClass('active');
+			$(this).addClass('active');
 
-		var index = $(this).data('id');
+			var index = $(this).data('id');
 
-		$('#slideshow .item.active').fadeOut().removeClass('active');
-		$("#slideshow .item:eq(" + index + ")").fadeIn().addClass('active');
+			$('#slideshow .item.active').fadeOut().removeClass('active');
+			$("#slideshow .item:eq(" + index + ")").fadeIn().addClass('active');
 
-		slideInt = setInterval( "slideshow()", 3000);
+			slideInt = setInterval( "slideshow()", 3000);
 
-	});
+		});
 
-	$('#slideshow .description').css({'left': function(){
-		return $('.wrap').offset().left;
-	}});
+		$('#slideshow .description').css({'left': function(){
+			return $('.wrap').offset().left;
+		}});
+		executed++;
+	}
 
 	/**
 	 *
