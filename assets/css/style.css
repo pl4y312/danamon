@@ -447,7 +447,6 @@ section{
 	display: block;
 }
 
-#header .menu .level-2 > ul > li:first-child a,
 #header .menu .level-2 > ul > li.active a,
 #header .menu .level-2 > ul > li:hover a,
 #header .menu .level-2 > ul > li > a:hover{
