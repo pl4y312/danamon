@@ -299,16 +299,18 @@ Alias: pl4y312
 		position: absolute;
 	}
 
-	#search-form{
+	#header #search-form{
+		position: relative;
 		float: right;
 		width: 100%;
 		margin-top: 20px;
+		top: 0px;
 	}
 
 	#header #search-form input{
 		width: 100%;
 		line-height: 30px;
-		height: 30px;
+		height: 40px;
 		background-size: 16px 15px;
 		background-position: right 10px center;
 		border:1px solid #e6e6e6;
