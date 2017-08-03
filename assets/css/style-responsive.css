@@ -937,10 +937,6 @@ Alias: pl4y312
 		padding-top: 10px;
 	}
 
-	.carousel-2 .carousel-inner{
-		padding-bottom: 100px;
-	}
-
 	.carousel-2 .carousel-controls{
 		text-align: center;
 		margin-top: 20px;
@@ -959,6 +955,20 @@ Alias: pl4y312
 		background-image: url('../img/arrow-pagination-mobile.png');
 		background-repeat: no-repeat;
 		background-position: left center;
+	}
+
+	.carousel.multi-item .item div{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.filter-form{
+		padding: 0 5px;
+	}
+
+	.filter-form input,
+	.filter-form select{
+		margin-top: 0px;
 	}
 
 	#footer{
