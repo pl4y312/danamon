@@ -472,10 +472,6 @@ $(window).on('load', function() {
 		})
 	}
 
-	if( $(window).width() < 992 ) {
-		$(".carousel-mobile").carousel();
-	}
-
 });
 
 
