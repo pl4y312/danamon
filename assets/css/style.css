@@ -835,6 +835,11 @@ section{
 
 .tab-content{
 	display: none;
+
+}
+.tab-content:first-child{
+	display: block !important;
+
 }
 
 #featured-menu-2 .item{

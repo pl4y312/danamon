@@ -1,0 +1,11 @@
+/* General */
+.ie #header #search-form input{
+	background-position: 130px center;
+	background-size: 13px 12px;
+	background-image: url('../img/icon-search-small.png');
+	padding-right: 5px;
+}
+
+.ie #featured-menu .tab-menu:first-child{
+	width: 155px;
+}
