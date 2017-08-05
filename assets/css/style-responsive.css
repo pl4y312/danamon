@@ -638,11 +638,6 @@ Alias: pl4y312
 		background-position: center right;
 	}
 
-	.carousel .list-style-2 li{
-		width: 100%;
-		margin: 0 15px;
-	}
-
 	.profile-page .thumbnail,
 	.profile-page .thumbnail img{
 		width: 100%;
@@ -962,9 +957,21 @@ Alias: pl4y312
 		background-position: left center;
 	}
 
+	.carousel-2 .list-style-2 li{
+		margin: 0 15px;
+	}
+
 	.carousel.multi-item .item div{
 		margin-bottom: 20px;
 		text-align: center;
+	}
+
+	.contact-page .carousel-2 .item{
+		padding: 0 15px;
+	}
+
+	.contact-page .carousel-control{
+		margin-bottom: 20px;
 	}
 
 	.filter-form{
