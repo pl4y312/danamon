@@ -974,6 +974,22 @@ Alias: pl4y312
 		margin-bottom: 20px;
 	}
 
+	.carousel.featured-news{
+		margin: 0 15px;
+	}
+
+	.carousel.featured-news .carousel-control{
+		background: none;
+	}
+
+	.carousel.featured-news .news-item{
+		background: #fff;
+	}
+
+	.carousel.featured-news .carousel-control .glyphicon{
+		margin-top: -60px;
+	}
+
 	.filter-form{
 		padding: 0 5px;
 	}
