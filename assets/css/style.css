@@ -1342,6 +1342,19 @@ section{
 	border-bottom: 1px solid #f15a22;
 }
 
+#suitable-saving tfoot td{
+	padding: 20px 8px;
+}
+
+#suitable-saving tfoot td:first-child{
+	font-size: 18px;
+	line-height: 40px;
+}
+
+#suitable-saving .table-responsive{
+	border: none;
+}
+
 #suitable-saving .btn-1{
 	font-size: 18px;
 	font-weight: bold;
