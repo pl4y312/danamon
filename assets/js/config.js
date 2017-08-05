@@ -337,7 +337,7 @@ $(window).on('load', function() {
 				$('#sticky-menu').animate({right: -$('#sticky-menu').width()}, 500);
 			} else {
 				$('#sticky-menu').animate({top: windowHeight}, 500);
-				$('#header').css({'position' : 'relative'});
+				// $('#header').css({'position' : 'relative'});
 				$('#sticky-menu').addClass('auto-hide');
 			}
 		}

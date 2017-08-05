@@ -920,6 +920,7 @@ section{
 }
 
 .list-style-2 .marker{
+	width: 48px;
 	font-size: 48px;
 	font-weight: bold;
 	float: left;

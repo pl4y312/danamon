@@ -638,6 +638,11 @@ Alias: pl4y312
 		background-position: center right;
 	}
 
+	.carousel .list-style-2 li{
+		width: 100%;
+		margin: 0 15px;
+	}
+
 	.profile-page .thumbnail,
 	.profile-page .thumbnail img{
 		width: 100%;
