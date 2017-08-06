@@ -472,6 +472,26 @@ $(window).on('load', function() {
 		})
 	}
 
+	if( $(window).width() < 768 ) {
+		$('.fixed-column thead tr th:first-child').addClass('headCol');
+		$('.fixed-column tbody tr td:first-child').addClass('headCol');
+		$('.fixed-column tfoot tr td:first-child').addClass('headCol');
+		$('.fixed-column td').not('.headCol').height(function(){
+			var _thisHeight = $(this).height();
+			var _thisHeadColHeight = $(this).siblings('.headCol').height();
+			if( _thisHeight < _thisHeadColHeight ) {
+				return _thisHeadColHeight - 3;
+			}
+		});
+		$('.fixed-column .headCol').height(function(){
+			var _thisHeight = $(this).height();
+			var _thisSiblingsHeight = $(this).siblings('td').height();
+			if( _thisHeight < _thisSiblingsHeight ) {
+				return _thisSiblingsHeight + 3;
+			}
+		})
+	}
+
 });
 
 

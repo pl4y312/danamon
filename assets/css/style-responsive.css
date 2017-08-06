@@ -458,8 +458,16 @@ Alias: pl4y312
 		font-size: 20px;
 	}
 
+	#suitable-saving thead td:first-child{
+		line-height: 64px;
+	}
+
 	#suitable-saving thead td.alt select{
 		height: 44px;
+	}
+
+	.table-responsive{
+		border: 0px !important;
 	}
 
 	.inner .sharing-social.bottom{
@@ -1116,6 +1124,22 @@ Alias: pl4y312
 		padding: 0px !important;
 	}
 
+	.fixed-column table{
+		margin-left: 192px;
+	}
+
+	.fixed-column th.headCol,
+	.fixed-column td.headCol{
+		left: 10px;
+		position: absolute;
+		width: 200px !important;
+		margin-left: 0px;
+		margin-top: -1px;
+		display: block;
+		border: 3px solid #fff !important;
+		white-space: normal !important;
+	}
+
 	#footer{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -1131,5 +1155,14 @@ Alias: pl4y312
 	.step-carousel li:before{
 		width: 48px;
 		margin-left: 68px;
+	}
+
+	.fixed-column table{
+		margin-left: 142px;
+	}
+
+	.fixed-column th.headCol,
+	.fixed-column td.headCol{
+		width: 150px !important;
 	}
 }
