@@ -548,6 +548,7 @@ section{
 	background-image: url('../img/arrow-sidebar-has-submenu.png');
 	background-position: left top;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 #sidebar li.active > .arrow-submenu{
