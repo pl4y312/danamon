@@ -480,6 +480,7 @@ Alias: pl4y312
 		overflow-x: scroll;
 		width: 100%;
 		margin-top: 25px;
+		position: relative;
 	}
 
 	.sharing-social.bottom .images-wrap{
@@ -489,6 +490,27 @@ Alias: pl4y312
 
 	.inner .sharing-social img{
 		padding: 0 20px;
+	}
+
+	.sharing-social.bottom .arrow-left,
+	.sharing-social.bottom .arrow-right{
+		width: 7px;
+		height: 13px;
+		background-image: url('../img/arrow-prev-next-form.png');
+		background-repeat: no-repeat;
+		padding: 0px;
+		position: absolute;
+		top: 50px;
+		display: none;
+	}
+
+	.sharing-social.bottom .arrow-left{
+		background-position: left bottom;
+	}
+
+	.sharing-social.bottom .arrow-right{
+		background-position: right bottom;
+		right: 15px;
 	}
 
 	#newsletter,
