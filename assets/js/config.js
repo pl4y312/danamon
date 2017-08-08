@@ -323,7 +323,7 @@ $(window).on('load', function() {
 	})
 	function timerIncrement() {
 		idleTime++;
-		if(idleTime >= 500 && !$('#sticky-menu').hasClass('open')){ // idle time 5 seconds
+		if(idleTime >= 5 && !$('#sticky-menu').hasClass('open')){ // idle time 5 seconds
 			if( $(window).width() >= 1200 ){
 				$('#sticky-menu').addClass('auto-hide');
 				$('#sticky-menu').animate({right: -$('#sticky-menu').width()}, 500);
