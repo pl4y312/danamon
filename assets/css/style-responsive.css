@@ -1134,6 +1134,10 @@ Alias: pl4y312
 		white-space: normal;
 	}
 
+	.scroll-wrap-width{
+		position: relative;
+	}
+
 	.scroll-width{
 		width: 100%;
 		overflow-x: scroll;
@@ -1144,6 +1148,28 @@ Alias: pl4y312
 		width: auto;
 		white-space: nowrap;
 		padding: 0px !important;
+	}
+
+	.scroll-wrap-width .arrow-left,
+	.scroll-wrap-width .arrow-right{
+		width: 11px;
+		height: 20px;
+		background-image: url('../img/arrow-scroll-big.png');
+		background-repeat: no-repeat;
+		padding: 0px;
+		position: absolute;
+		top: 25px;
+		display: none;
+	}
+
+	.scroll-wrap-width .arrow-left{
+		background-position: left bottom;
+		left: 15px;
+	}
+
+	.scroll-wrap-width .arrow-right{
+		background-position: right bottom;
+		right: 15px;
 	}
 
 	.fixed-column table{
