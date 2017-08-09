@@ -348,6 +348,20 @@ $(window).on('load', function() {
 			}
 		}
 	})
+	$(this).scroll(function() {
+		idleTime = 0;
+		if($('#sticky-menu').hasClass('auto-hide')){
+			if($(window).width() >= 1200){
+				$('#sticky-menu')
+				.removeClass('auto-hide')
+				.animate({right: 0}, 500);
+			} else {
+				$('#sticky-menu')
+				.removeClass('auto-hide')
+				.animate({top: windowHeight - 60}, 500);
+			}
+		}	
+	})
 	function timerIncrement() {
 		idleTime++;
 		if(idleTime >= 5 && !$('#sticky-menu').hasClass('open')){ // idle time 5 seconds
