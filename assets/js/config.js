@@ -102,6 +102,33 @@ $(window).on('load', function() {
 		$('#slideshow .description').css({'left': function(){
 			return $('.wrap').offset().left;
 		}});
+
+		$('#slideshow').on('swiperight', function() {
+			clearInterval(slideInt);
+			slideshow();
+			slideInt = setInterval( "slideshow()", 3000);
+		})
+
+		$('#slideshow').on('swipeleft', function() {
+			clearInterval(slideInt);
+
+			var $active = $('#slideshow .item.active');
+			var $prev = $active.prev('.item');
+
+			$active.fadeOut().removeClass('active');
+			$('#slideshow-nav li.active').removeClass('active');
+
+			if($prev.length > 0){
+				$prev.fadeIn().addClass('active');
+			} else {
+				$('#slideshow .item').last().fadeIn().addClass('active');
+			}
+
+			var activeIndex = $('#slideshow .item.active').index();
+			$('#slideshow-nav li:eq(' + activeIndex + ')').addClass('active');
+
+			slideInt = setInterval( "slideshow()", 3000);
+		})
 		executed++;
 	}
 
