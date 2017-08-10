@@ -1125,6 +1125,10 @@ Alias: pl4y312
 		right: 40px;
 	}
 
+	#featured-menu-2{
+		margin: 0px !important;
+	}
+
 	#featured-menu-2 .item{
 		width: auto;
 		height: 140px;
