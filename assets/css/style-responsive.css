@@ -853,6 +853,10 @@ Alias: pl4y312
 		width: 100%;
 	}
 
+	.frontend #news-section .title{
+		text-align: center;
+	}
+
 	#solusi .title.text-center,
 	#inspirasi .title.text-center,
 	#kemudahan .title.text-center{
