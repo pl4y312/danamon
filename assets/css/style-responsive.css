@@ -1183,6 +1183,15 @@ Alias: pl4y312
 		right: 15px;
 	}
 
+	.featured-menu.scroll-wrap-width .arrow-scroll{
+		z-index: 100;
+		top: 50px;
+	}
+
+	.featured-menu .scroll-width{
+		padding: 0px !important;
+	}
+
 	.fixed-column table{
 		margin-left: 192px;
 	}
