@@ -88,7 +88,7 @@ Alias: pl4y312
 		position: fixed;
 		top: 109px;
 		width: 100%;
-		background: #f1f2f2;
+		background-color: rgba(255, 255, 255, .9);
 		padding-bottom: 100px;
 		height: 100%;
 		overflow-y: scroll;
@@ -96,28 +96,35 @@ Alias: pl4y312
 
 	#header .menu > ul > li{
 		display: block;
-		margin: 0 30px;
-		border-bottom: 1px solid #d1d3d4;
+		padding: 0 10px;
 		position: relative;
 	}
 
 	#header .menu > ul > li > a{
 		display: block;
 		padding: 10px 0;
+		border-bottom: 1px solid #d1d3d4;
 	}
 
 	#header .menu > ul > li > a:hover{
-		border: none;
+		border-bottom: 1px solid #d1d3d4;
 	}
 
 	#header .menu .arrow-submenu{
 		position: absolute;
-		right: 0px;
+		right: 10px;
 		width: 12px;
 		height: 12px;
 		background: url('../img/arrow-submenu.png') top center no-repeat;
 		top: 15px;
 		background-size: 12px 24px;
+	}
+
+	#header .menu li.open{
+		background: -webkit-linear-gradient(left, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* Standard syntax (must be last) */
 	}
 
 	#header .menu li.open .arrow-submenu{

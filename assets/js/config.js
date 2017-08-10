@@ -11,8 +11,8 @@ $(window).on('load', function() {
 		$("#header .menu .level-2 > ul > li").has('.level-3').append('<div class="arrow-submenu"></div>');
 		$("#header .menu .level-2 > ul > li").on("mouseover", function () {
 			if($(this).has('.level-3').length){
-				$(this).siblings(".active").removeClass("active");
-				$(this).addClass("active");
+				$(this).siblings(".active").removeClass("active").find('.level-3').hide();
+				$(this).addClass("active").find('.level-3').show();
 			}
 		});
 	}
@@ -27,14 +27,17 @@ $(window).on('load', function() {
 		$('#header .menu .level-1').css({'right': -menuWidth});
 		$('#icon-menu-responsive').click(function(){
 			$(this).toggleClass('open');
+
 			if($(this).hasClass('open')){
 				$('#header .menu .level-1').animate({right: "0px"}, 500);
 				if($('#sticky-menu').hasClass('open'))
 					$('#sticky-menu .glyphicon-remove').trigger('click');
 				$('body').addClass('disableScroll');
+				$('#header').css('position', 'fixed');
 			} else {
 				$('#header .menu .level-1').animate({right: -menuWidth}, 500);
 				$('body').removeClass('disableScroll');
+				$('#header').css('position', 'absolute');
 			}
 		});
 

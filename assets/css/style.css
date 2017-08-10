@@ -403,7 +403,7 @@ section{
 	z-index: 100;
 	width: 100%;
 	height: auto;
-	background: #fff;
+	background-color: rgba(255, 255, 255, .9);
 	top: 54px;
 	left: 0px;
 	border-top: 1px solid #f7931d;
@@ -447,20 +447,23 @@ section{
 	display: block;
 }
 
-#header .menu .level-2 > ul > li.active a,
-#header .menu .level-2 > ul > li:hover a,
+#header .menu .level-2 > ul > li.active > a,
+#header .menu .level-2 > ul > li:hover > a,
 #header .menu .level-2 > ul > li > a:hover{
-	background: #e6e6e6;
+	background-color: rgba(0, 0, 0, .25);
 }
 
 #header .menu .level-3{
 	display: none;
 	position: absolute;
-	background-color: #e6e6e6;
 	left: 235px;
 	width: 705px;
 	height: 100%;
 	top: 0px;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(0,0,0,.25), rgba(0,0,0,.05)); /* Standard syntax (must be last) */
 }
 
 #header .menu li:first-child > .level-3,
