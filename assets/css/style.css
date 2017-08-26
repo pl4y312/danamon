@@ -356,7 +356,7 @@ section{
 #header #search-form{
 	position: absolute;
 	right: 0;
-	top: -30px;
+	top: 12px;
 }
 
 #header #search-form input{
@@ -492,7 +492,7 @@ section{
 	font-size: 16px;
 	right: 60px;
 	position: absolute;
-	top: 12px;
+	top: -30px;
 }
 
 #sbdk a{
@@ -506,6 +506,7 @@ section{
 	font-weight: bold;
 	right: 0px;
 	bottom: 0px;
+	top: -30px;
 	position: absolute;
 }
 
@@ -837,8 +838,13 @@ section{
 	font-weight: normal;
 }
 
+.featured-menu{
+	z-index: 100;
+}
+
 .tab-content{
 	display: none;
+	position: relative;
 
 }
 .tab-content:first-child{
