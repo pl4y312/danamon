@@ -303,7 +303,7 @@ Alias: pl4y312
 	}
 
 	#header{
-		position: absolute;
+		position: fixed;
 	}
 
 	#header #search-form{
