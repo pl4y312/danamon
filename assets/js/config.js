@@ -106,13 +106,13 @@ $(window).on('load', function() {
 			return $('.wrap').offset().left;
 		}});
 
-		$('#slideshow').on('swiperight', function() {
+		$('#slideshow').on('swipeleft', function() {
 			clearInterval(slideInt);
 			slideshow();
 			slideInt = setInterval( "slideshow()", 3000);
 		})
 
-		$('#slideshow').on('swipeleft', function() {
+		$('#slideshow').on('swiperight', function() {
 			clearInterval(slideInt);
 
 			var $active = $('#slideshow .item.active');
@@ -297,7 +297,7 @@ $(window).on('load', function() {
 
 			$('body').addClass('disableScroll');
 			$(this).addClass('current');
-			$('#sticky-menu .glyphicon-remove').css({bottom: stickyContentHeight + 25, top: 'auto'})
+			$('#sticky-menu .glyphicon-remove').css({bottom: stickyContentHeight + 25, top: 'auto'}).show();
 			otherOpenedContent.hide();
 			thisContent.show();
 
@@ -319,7 +319,7 @@ $(window).on('load', function() {
 		});
 
 		$('#sticky-menu .glyphicon-remove').click(function(){
-			$('#sticky-menu .glyphicon-remove').hide();
+			$('#sticky-menu .glyphicon-remove').animate({bottom: -stickyContentHeight}, 500);
 			$('#sticky-menu .current').siblings('.content').animate({bottom: -stickyContentHeight}, 500);
 			$('#header').css({'position' : 'absolute'});
 			$('#sticky-menu').removeClass('open').removeClass('auto-hide');
@@ -331,7 +331,7 @@ $(window).on('load', function() {
 	// Auto close sticky menu when idle
 	var idleTime = 0;
 	var idleInterval = setInterval(timerIncrement, 1000);
-	$(this).mouseover(function() {
+	$(this).mousemove(function() {
 		idleTime = 0;
 		if($('#sticky-menu').hasClass('auto-hide')){
 			if($(window).width() >= 1200){
