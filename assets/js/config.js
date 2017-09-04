@@ -33,11 +33,9 @@ $(window).on('load', function() {
 				if($('#sticky-menu').hasClass('open'))
 					$('#sticky-menu .glyphicon-remove').trigger('click');
 				$('body').addClass('disableScroll');
-				$('#header').css('position', 'fixed');
 			} else {
 				$('#header .menu .level-1').animate({right: -menuWidth}, 500);
 				$('body').removeClass('disableScroll');
-				$('#header').css('position', 'absolute');
 			}
 		});
 
@@ -321,7 +319,6 @@ $(window).on('load', function() {
 		$('#sticky-menu .glyphicon-remove').click(function(){
 			$('#sticky-menu .glyphicon-remove').animate({bottom: -stickyContentHeight}, 500);
 			$('#sticky-menu .current').siblings('.content').animate({bottom: -stickyContentHeight}, 500);
-			$('#header').css({'position' : 'absolute'});
 			$('#sticky-menu').removeClass('open').removeClass('auto-hide');
 			$('body').removeClass('disableScroll');
 			$('#sticky-menu a').removeClass('current');
