@@ -1,4 +1,5 @@
 var executed = 0;
+var windowWidth = $(window).width()
 
 $(window).on('load', function() {
 
@@ -22,27 +23,30 @@ $(window).on('load', function() {
 	 * Mobile Toggle Menu
 	 *
 	 */
-	if ($(window).width() < 1200) {
-		var menuWidth = $(this).width();
-		$('#header .menu .level-1').css({'right': -menuWidth});
-		$('#icon-menu-responsive').click(function(){
-			$(this).toggleClass('open');
+	if (!executed) {
+		if (windowWidth < 1200) {
+			console.log(1);
+			$('#header .menu .level-1').css({'right': -windowWidth});
+			$('#icon-menu-responsive').click(function(){
+				console.log(2);
+				$(this).toggleClass('open');
 
-			if($(this).hasClass('open')){
-				$('#header .menu .level-1').animate({right: "0px"}, 500);
-				if($('#sticky-menu').hasClass('open'))
-					$('#sticky-menu .glyphicon-remove').trigger('click');
-				$('body').addClass('disableScroll');
-			} else {
-				$('#header .menu .level-1').animate({right: -menuWidth}, 500);
-				$('body').removeClass('disableScroll');
-			}
-		});
+				if($(this).hasClass('open')){
+					console.log(3);
+					$('#header .menu .level-1').animate({right: "0px"}, 500);
+					if($('#sticky-menu').hasClass('open'))
+						$('#sticky-menu .glyphicon-remove').trigger('click');
+					$('body').addClass('disableScroll');
+				} else {
+					console.log(4);
+					$('#header .menu .level-1').animate({right: -windowWidth}, 500);
+					$('body').removeClass('disableScroll');
+				}
+			});
 
-		// Submenu
-		$('#header .menu li').has('ul').append('<div class="arrow-submenu"></div>')
-		$('#header .menu li a')
-			.click(function(e){
+			// Submenu
+			$('#header .menu li').has('ul').append('<div class="arrow-submenu"></div>')
+			$('#header .menu li a').click(function(e){
 				var _li = $(this).closest('li');
 				if(_li.has('ul').length){
 					e.preventDefault();
@@ -54,11 +58,8 @@ $(window).on('load', function() {
 					_li.find('ul ul').hide();
 				}
 			});
-
-		$('#header ul').click(function(e){
-			console.log(e);
-		})
-	};
+		};
+	}
 
 	/**
 	 *
@@ -584,11 +585,14 @@ $(window).on('load', function() {
  *
  */
 $(window).on('resize', function(){
-	if($(this).width() < 1200) {
-		$('#header .menu .level-1').css({'right': $(this).width()});
+	windowWidth = $(this).width()
+	if(windowWidth < 1200) {
+		$('body').removeClass('disableScroll');
+		$('#icon-menu-responsive').removeClass('open');
+		$('#header .menu .level-1').css({'right': -windowWidth});
 	}
 	
-	if($(this).width() < 992) {
+	if(windowWidth < 992) {
 		$('#tab-1 .switch-side .pull-right').removeClass('pull-right');
 	} else {
 		$('#tab-1 .switch-side > div').addClass('pull-right');
