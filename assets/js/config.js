@@ -307,7 +307,6 @@ $(window).on('load', function() {
 			});
 
 			$('#sticky-menu .glyphicon-remove').click(function(){
-				console.log('tes2: ', stickyContentHeight)
 				$('#sticky-menu .glyphicon-remove').animate({bottom: -stickyContentHeight}, 500);
 				$('#sticky-menu .current').siblings('.content').animate({bottom: -stickyContentHeight}, 500);
 				$('#sticky-menu').removeClass('open').removeClass('auto-hide');
@@ -435,6 +434,17 @@ $(window).on('load', function() {
 	   var step = $(evt.relatedTarget).index();
 	   $('#carousel-captions .carousel-caption').hide();
 	   $('#carousel-captions #caption-' + step).fadeIn();
+	});
+
+	/**
+	 *
+	 * Carousel on Swipe
+	 *
+	 */
+	$('.carousel').on('swipeleft', function() {
+		$(this).carousel('next');
+	}).on('swiperight', function() {
+		$(this).carousel('prev');
 	});
 
 	/**
