@@ -78,6 +78,7 @@ Alias: pl4y312
 		width: 20px;
 		height: 21px;
 		cursor: pointer;
+		display: inline-block !important;
 	}
 
 	#header #icon-menu-responsive.open{
@@ -326,6 +327,11 @@ Alias: pl4y312
 	}
 
 	#sbdk{
+		top: 9px;
+		right: 130px;
+	}
+
+	#icon-search{
 		top: 9px;
 		right: 90px;
 	}
@@ -1118,7 +1124,11 @@ Alias: pl4y312
 	}
 
 	#sbdk{
-		right: 100px;
+		right: 120px;
+	}
+
+	#icon-search{
+		right: 90px;
 	}
 
 	#language{

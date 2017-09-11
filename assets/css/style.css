@@ -343,7 +343,7 @@ section{
 
 #header .wrap > div{
 	vertical-align: bottom !important;
-	display: inline-block !important;
+	display: inline-block;
 }
 
 #header #logo{
@@ -497,6 +497,16 @@ section{
 
 #sbdk a{
 	color: #666;
+}
+
+#icon-search{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/icon-search-2.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 20px 20px;
 }
 
 #language{

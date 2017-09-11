@@ -577,6 +577,40 @@ $(window).on('load', function() {
 		})
 	}
 
+	/**
+	 *
+	 * Icon Search on Mobile
+	 *
+	 */
+	if (windowWidth < 992) {
+		$('#header #search-form').hide();
+		$('#header #icon-search').on('click', function () {
+			$(this).hide();
+			$('#sbdk').css('right', '90px');
+			$('#header #search-form').slideDown();
+		})
+		$(window).on('scroll', function () {
+			$('#header #search-form').hide();
+			$('#header #icon-search').show();
+			if (windowWidth < 768) {
+				$('#sbdk').css('right', '120px');
+			} else {
+				$('#sbdk').css('right', '130px');
+			}
+			$('#header #search-form').slideUp();
+		})
+		$(window).on('resize', function() {
+			if ($('#header #icon-search').is(':visible')) {
+				if (windowWidth < 768) {
+					$('#sbdk').css('right', '120px');
+				} else {
+					$('#sbdk').css('right', '130px');
+				}
+			}
+		})
+
+	}
+
 	executed++;
 });
 
