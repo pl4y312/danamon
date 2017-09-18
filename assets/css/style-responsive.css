@@ -112,13 +112,22 @@ Alias: pl4y312
 	}
 
 	#header .menu .arrow-submenu{
-		position: absolute;
-		right: 10px;
+		position: relative;
+		/*top: 15px;*/
+		/*right: 10px;*/
 		width: 12px;
 		height: 12px;
 		background: url('../img/arrow-submenu.png') top center no-repeat;
-		top: 15px;
 		background-size: 12px 24px;
+	}
+
+	#header .menu .arrow-submenu-wrapper{
+		right: 10px;
+		top: 5px;
+		padding: 10px;
+		position: absolute;
+		width: 32px;
+		height: 32px;
 	}
 
 	#header .menu li.open{
@@ -269,6 +278,7 @@ Alias: pl4y312
 
 	#sticky-menu .glyphicon-remove{
 		right: 20px !important;
+		top: 15px;
 	}
 }
 
@@ -1204,6 +1214,10 @@ Alias: pl4y312
 
 	.featured-menu .scroll-width{
 		padding: 0px !important;
+	}
+
+	#featured-menu.scroll-wrap{
+		white-space: normal;
 	}
 
 	.fixed-column table{

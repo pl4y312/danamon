@@ -42,11 +42,10 @@ $(window).on('load', function() {
 			});
 
 			// Submenu
-			$('#header .menu li').has('ul').append('<div class="arrow-submenu"></div>')
-			$('#header .menu li a').click(function(e){
+			$('#header .menu li').has('ul').append('<div class="arrow-submenu-wrapper"><div class="arrow-submenu"></div></div>')
+			$('#header .menu li .arrow-submenu-wrapper').click(function(e){
 				var _li = $(this).closest('li');
 				if(_li.has('ul').length){
-					e.preventDefault();
 					_li.siblings('.open')
 						.removeClass('open')
 						.find('ul').slideUp();
@@ -258,18 +257,19 @@ $(window).on('load', function() {
 			$('#sticky-menu a').click(function(){
 				var stickyMenuWidth = $("#sticky-menu").width();
 				var thisContent = $(this).siblings('.content');
+				var thisIndex = thisContent.closest('li').index();
 				var otherOpenedContent = $('#sticky-menu .current').removeClass('current').siblings('.content');
+				var otherOpenedIndex = otherOpenedContent.closest('li').index();
 
-				$(this).addClass('current');
-				otherOpenedContent.hide();
-				thisContent.show();
+				otherOpenedContent.animate({right: -320}, 500);
 
-				if(!$('#sticky-menu').hasClass('open')){
-					$('#sticky-menu').addClass('open');
+				if (thisIndex != otherOpenedIndex){
+					$(this).addClass('current');
 					thisContent.animate({right: stickyMenuWidth}, 500);
-				} else {
-					thisContent.css({right: stickyMenuWidth})
 				}
+
+				if(!$('#sticky-menu').hasClass('open'))
+					$('#sticky-menu').addClass('open');
 			});
 
 			$('#sticky-menu .glyphicon-remove').click(function(){
@@ -291,7 +291,6 @@ $(window).on('load', function() {
 
 				$('body').addClass('disableScroll');
 				$(this).addClass('current');
-				$('#sticky-menu .glyphicon-remove').css({bottom: stickyContentHeight + 25, top: 'auto'}).show();
 				otherOpenedContent.hide();
 				thisContent.show();
 

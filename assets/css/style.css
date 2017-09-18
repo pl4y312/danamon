@@ -674,10 +674,10 @@ section{
 }
 
 #slideshow{
-	width: 100%;
+	width: 1400px;
+	margin: 0 auto 20px auto;
 	height: 480px;
 	position: relative;
-	margin-bottom: 20px;
 	overflow: hidden;
 }
 
@@ -786,7 +786,7 @@ section{
 
 #featured-menu .tab-menu{
 	width: 157px;
-	border-right: 1px solid #f9f9f9;
+	border-right: 1px solid #e1e1e1;
 	float: left;
 	height: 123px;
 	border-bottom: 5px solid #e1e1e1;
@@ -2509,12 +2509,8 @@ section{
 	color: #fff;
 	font-size: 20px;
 	position: absolute;
-	right: -300px;
+	right: 20px;
 	top: 120px;
 	z-index: 999;
 	cursor: pointer;
-}
-
-#sticky-menu.open .glyphicon-remove{
-	right: 90px;
 }
