@@ -674,11 +674,18 @@ section{
 }
 
 #slideshow{
-	width: 1400px;
-	margin: 0 auto 20px auto;
+	width: 100%;
+	margin-bottom: 20px;
 	height: 480px;
 	position: relative;
 	overflow: hidden;
+}
+
+@media(min-width: 1366px){
+	#slideshow{
+		width: 1366px;
+		margin: 0 auto 20px auto;
+	}
 }
 
 #slideshow .item{
