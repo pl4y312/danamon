@@ -317,7 +317,7 @@ function setBannerHeight(windowWidth) {
     if (windowWidth < 992) { // XS & SM
         bannerHeight = windowWidth;
     } else { // MD & LG
-        bannerHeight = windowWidth * 250 / 1366;
+        bannerHeight = windowWidth * 360 / 1024;
     }
 
     $(".banner-wide").css({'height': bannerHeight});
