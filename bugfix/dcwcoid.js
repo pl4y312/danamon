@@ -313,14 +313,17 @@ $(window).on('load', function () {
 });
 
 function setBannerHeight(windowWidth) {
-    var bannerHeight = 0;
-    if (windowWidth < 992) { // XS & SM
-        bannerHeight = windowWidth;
-    } else { // MD & LG
-        bannerHeight = windowWidth * 360 / 1024;
+    var bannerHeight = windowWidth; // XS & SM
+    var slideshowHeight = windowWidth; // XS & SM
+
+    if (windowWidth >= 992) { // MD & LG
+        slideshowHeight = windowWidth * 360 / 1024;
+        bannerHeight = windowWidth * 187 / 1024;
     }
 
     $(".banner-wide").css({'height': bannerHeight});
     $("#banner-page").css({'height': bannerHeight});
-    $("#slideshow").css({'height': bannerHeight});
+    $("#banner-page .img").css({'height': bannerHeight});
+    $("#slideshow").css({'height': slideshowHeight});
+    $("#slideshow .item img").css({'height': slideshowHeight});
 }

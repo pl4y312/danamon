@@ -8,7 +8,6 @@ $(document).ready(function () {
 	 *
 	 */
     if ($(window).width() > 1024) {
-        // $("#header .menu .level-2 > ul > li").has('.level-3').append('<div class="arrow-submenu"></div>');
         $("#header .menu .level-2 > ul > li").on("mouseover", function () {
             if ($(this).has('.level-3').length) {
                 $(this).siblings(".active").removeClass("active").find('.level-3').hide();
