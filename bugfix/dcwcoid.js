@@ -316,9 +316,12 @@ function setBannerHeight(windowWidth) {
     var bannerHeight = windowWidth; // XS & SM
     var slideshowHeight = windowWidth; // XS & SM
 
-    if (windowWidth >= 992) { // MD & LG
-        slideshowHeight = windowWidth * 360 / 1024;
-        bannerHeight = windowWidth * 187 / 1024;
+    if (windowWidth >= 992 && windowWidth < 1366) { // MD & LG
+        slideshowHeight = windowWidth * 480 / 1366;
+        bannerHeight = windowWidth * 250 / 1366;
+    } else if (windowWidth >= 1366) { // Maximum slideshow height
+        slideshowHeight = 480;
+        bannerHeight = windowWidth * 250 / 1366;
     }
 
     $(".banner-wide").css({'height': bannerHeight});
